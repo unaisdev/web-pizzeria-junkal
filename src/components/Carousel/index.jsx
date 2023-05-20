@@ -2,7 +2,7 @@ import "./styles.css";
 
 const Carousel = () => {
   return (
-    <section className="carousel-wrapper">
+    <section className="carousel-wrapper mb-4">
       <span id="item-1"></span>
       <span id="item-2"></span>
       <span id="item-3"></span>

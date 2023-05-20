@@ -59,7 +59,7 @@ const Header = () => {
     }, []);
 
     return (
-        <header className="container py-4 px-6" >
+        <header className="container py-4 px-6 border-b-2" >
             <div className="flex justify-between items-center">
                 <div className="flex items-center">
                     <img
