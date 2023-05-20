@@ -1,0 +1,89 @@
+---
+import { SEO } from "astro-seo";
+import Header from "../components/Header";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <SEO
+      title="Pizzería Junkal - Irun"
+      description="Pizzería Junkal - Irun"
+      openGraph={{
+        basic: {
+          title: "Pizzería Junkal - Irun",
+          type: "Pizza",
+          image: "/images/principal.jpg",
+          url: "http://pizzeriajunkal.vercel.app",
+        },
+      }}
+      twitter={{
+        creator: "@unaicanales",
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content: "/images/principal.jpg",
+          },
+          { name: "twitter:title", content: "Pizzería Junkal - Irun" },
+        ],
+      }}
+    />
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta property="og:title" content="Pizzería Junkal - Irun" />
+    <meta
+      property="og:description"
+      content="Pizzería Junkal - Irun | ¡Disfruta unas riquísimas pizzas en Pizzería Junkal! Elaboradas con los mejores ingredientes y cocidas en nuestro horno de leña. ¡Ven a recogerla y disfrútala recién hecha! Nos encontramos en ..."
+    />
+    <meta
+      name="keywords"
+      content="pizzería junkal, pizzería irun, pizza irun, horno de leña irun"
+    />
+    <link rel="canonical" href="https://pizzeria-junkal.vercel.app" />
+    <!-- <meta name="robots" content="index, follow"> -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="container sm:mx-auto sm:px-6 bg-almost-white z-0">
+    <slot />
+    <style is:global>
+      :root {
+        --accent: 124, 58, 237;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          #da62c4 30%,
+          white 60%
+        );
+      }
+      html {
+        font-family: system-ui, sans-serif;
+        /* background-color: #f6f6f6; */
+      }
+      code {
+        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+      }
+    </style>
+  </body>
+</html>

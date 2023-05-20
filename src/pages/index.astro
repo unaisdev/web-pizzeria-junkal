@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Header from "../components/Header";
+import Carta from "../components/Carta";
+import Carousel from "../components/Carousel";
+---
+
+<Layout title="Pizzería Junkal - Irun">
+  <Header client:only="react" />
+
+  <main class="container">
+    <Carousel />
+	  <Carta />
+  </main>
+</Layout>
+
+<style>
+  :global(html) {
+    /* ...TRUNCATED */
+
+    color: hsl(
+      var(--colour-text-hue) var(--colour-text-saturation)
+        var(--colour-text-luminance)
+    );
+
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :global(html) {
+      scroll-behavior: auto;
+    }
+  }
+</style>
