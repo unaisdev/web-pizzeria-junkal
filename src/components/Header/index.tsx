@@ -59,7 +59,7 @@ const Header = () => {
     }, []);
 
     return (
-        <header className="container py-4 px-6 border-b-2" >
+        <header className="container py-2 px-4 sm:py-4 sm:px-6 border-b-2" >
             <div className="flex justify-between items-center">
                 <div className="flex items-center">
                     <img
@@ -69,7 +69,7 @@ const Header = () => {
                     />
                     <div className="flex flex-col px-4">
                         <h1 className="text-xl sm:text-3xl font-bold">Pizzería Junkal</h1>
-                        <h6 className="text-sm font-thin">Es otra historia</h6>
+                        <h6 className="text-xs sm:text-sm font-thin">Es otra historia</h6>
                     </div>
                 </div>
                 <nav className="hidden sm:flex">
@@ -128,7 +128,7 @@ const Header = () => {
                         </motion.li>
                     </ul>
                 </nav>
-                <div className="flex justify-center items-center sm:hidden">
+                <div className="flex justify-center items-center lg:hidden">
                     <button
                         onClick={debounce(() => {
                             console.log("click");

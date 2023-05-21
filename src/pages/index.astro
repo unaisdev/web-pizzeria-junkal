@@ -3,7 +3,6 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Header from "../components/Header";
 import Carta from "../components/Carta";
-import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 import DondeEstamos from "../components/DondeEstamos";
 import SwiperCarousel from "../components/SwiperCarousel";
@@ -12,7 +11,7 @@ import SwiperCarousel from "../components/SwiperCarousel";
 <Layout title="Pizzería Junkal - Irun">
   <Header client:idle />
 
-  <main class="container relative">
+  <main class="lg:container relative">
     <SwiperCarousel client:idle/>
 	  <Carta />
     <DondeEstamos />

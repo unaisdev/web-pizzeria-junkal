@@ -18,18 +18,18 @@ const SwiperCarousel = () => {
             // install Swiper modules
             effect="fade"
             className='h-96'
-            modules={[Pagination, Scrollbar, A11y, EffectFade]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
             spaceBetween={0}
             slidesPerView={1}
             draggable
             loop
+            navigation
             autoplay={{
                 delay: 0,
                 waitForTransition: true,
                 disableOnInteraction: false,
                 reverseDirection: true
             }}
-            allowSlidePrev={false}
             pagination={{ clickable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log('slide change')}
