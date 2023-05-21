@@ -5,13 +5,6 @@ import SocialMediaButtons from "../../general/SocialMediaButtons";
 interface HeaderProps {
     open: boolean;
     handleClose: () => void;
-    // scrollTo: {
-    //     handleScrollToInicio: () => void,
-    //     handleScrollToExperience: () => void,
-    //     handleScrollToProjects: () => void,
-    //     handleScrollToTechnologies: () => void,
-    // };
-
 }
 
 const variants = {
@@ -32,10 +25,22 @@ const variants = {
 };
 
 const MobileNav = ({ open, handleClose }: HeaderProps) => {
-    const handleInicioClick = () => { handleClose() }
-    const handleExperienciaClick = () => { handleClose() }
-    const handleProjectosClick = () => { handleClose() }
-    const handleTecnologiasClick = () => { handleClose() }
+    const handleInicioClick = () => { 
+        const anchor = document.querySelector("body");
+        anchor?.scrollIntoView({ behavior: "smooth" });
+        handleClose() 
+    }
+    const handleCartaClick = () => { 
+        const anchor = document.querySelector("#carta");
+        anchor?.scrollIntoView({ behavior: "smooth" });
+        handleClose() 
+    }
+
+    const handleInfoClick = () => { 
+        const anchor = document.querySelector("#info");
+        anchor?.scrollIntoView({ behavior: "smooth" });
+        handleClose() 
+    }
 
     console.log(open)
     return (
@@ -76,7 +81,7 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
                                     whileTap={{ scale: 0.9 }}
                                 >
                                     <p
-                                        onClick={handleExperienciaClick}
+                                        onClick={handleCartaClick}
                                         className="cursor-pointer dark:text-white hover:[text-shadow:_1px_3px_8px_rgb(88_88_88_/_80%)] hover:dark:[text-shadow:_1px_3px_8px_rgb(255_255_255_/_100%)]"
                                     >
                                         Nuestra carta
@@ -87,7 +92,6 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
                                     whileTap={{ scale: 0.9 }}
                                 >
                                     <p
-                                        onClick={handleProjectosClick}
                                         className="cursor-pointer dark:text-white hover:[text-shadow:_1px_3px_8px_rgb(88_88_88_/_80%)] hover:dark:[text-shadow:_1px_3px_8px_rgb(255_255_255_/_100%)]"
                                     >
                                         Historia
@@ -98,7 +102,7 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
                                     whileTap={{ scale: 0.9 }}
                                 >
                                     <p
-                                        onClick={handleTecnologiasClick}
+                                        onClick={handleInfoClick}
                                         className="cursor-pointer dark:text-white hover:[text-shadow:_1px_3px_8px_rgb(88_88_88_/_80%)] hover:dark:[text-shadow:_1px_3px_8px_rgb(255_255_255_/_100%)]"
                                     >
                                         Dónde estamos

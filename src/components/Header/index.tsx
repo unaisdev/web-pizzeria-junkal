@@ -37,13 +37,25 @@ const Header = () => {
     const [headerOpacity, setHeaderOpacity] = useState(1);
     const [open, setOpen] = useState(false)
 
-    const handleOpenClick = () => {
-        setOpen(true)
+    function handleClickCarta() {
+        const anchor = document.querySelector("#carta");
+        anchor?.scrollIntoView({ behavior: "smooth" });
+    }
+
+    function handleClickInfo() {
+        const anchor = document.querySelector("#info");
+        anchor?.scrollIntoView({ behavior: "smooth" });
+    }
+
+    function handleClickInicio() {
+        const anchor = document.querySelector("body");
+        anchor?.scrollIntoView({ behavior: "smooth" });
     }
 
     const handleCloseClick = () => {
         setOpen(false)
     }
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -59,7 +71,7 @@ const Header = () => {
     }, []);
 
     return (
-        <header className="container py-2 px-4 sm:py-4 sm:px-6 border-b-2" >
+        <header className="container sticky py-2 px-4 sm:py-4 sm:px-6 border-b-2" >
             <div className="flex justify-between items-center">
                 <div className="flex items-center">
                     <img
@@ -68,7 +80,7 @@ const Header = () => {
                         alt="Snap Logo"
                     />
                     <div className="flex flex-col px-4">
-                        <h1 className="text-xl sm:text-3xl font-bold">Pizzería Junkal</h1>
+                        <h1 className="text-lg border-b-4 -mb-3 sm:text-3xl font-bold">Pizzería Junkal</h1>
                         <h6 className="text-xs sm:text-sm font-thin">Es otra historia</h6>
                     </div>
                 </div>
@@ -80,7 +92,7 @@ const Header = () => {
                             whileTap={{ scale: 0.9 }}
                         >
                             <p
-                                // onClick={scrollTo.handleScrollToInicio}
+                                onClick={handleClickInicio}
                                 className="cursor-pointer sm:uppercase text-gray-400 hover:text-black hover:font-semibold"
                             >
                                 INICIO
@@ -94,7 +106,7 @@ const Header = () => {
                             whileTap={{ scale: 0.9 }}
                         >
                             <p
-                                // onClick={scrollTo.handleScrollToExperience}
+                                onClick={handleClickCarta}
                                 className="cursor-pointer sm:uppercase text-gray-400 hover:text-black"
                             >
                                 NUESTRA CARTA
@@ -120,7 +132,7 @@ const Header = () => {
                             whileTap={{ scale: 0.9 }}
                         >
                             <p
-                                // onClick={scrollTo.handleScrollToTechnologies}
+                                onClick={handleClickInfo}
                                 className="cursor-pointer sm:uppercase text-gray-400 hover:text-black"
                             >
                                 DÓNDE ESTAMOS
@@ -143,7 +155,7 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-            <MobileNav open={open} handleClose={handleCloseClick} />
+            <MobileNav open={open} handleClose={handleCloseClick}/>
         </header>
     )
 }

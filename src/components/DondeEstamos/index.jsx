@@ -2,7 +2,7 @@ import "./styles.css";
 
 const DondeEstamos = () => {
   return (
-    <section className="mb-32 text-gray-800 py-4">
+    <section id="info" className="mb-32 text-gray-800 py-4">
       <div className="block bg-white">
         <div className="pb-4">
           <h1 className="text-center font-bold text-2xl">DÓNDE ESTAMOS</h1>
