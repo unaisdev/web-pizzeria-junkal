@@ -6,13 +6,14 @@ import Carta from "../components/Carta";
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 import DondeEstamos from "../components/DondeEstamos";
+import SwiperCarousel from "../components/SwiperCarousel";
 ---
 
 <Layout title="Pizzería Junkal - Irun">
   <Header client:idle />
 
-  <main class="container">
-    <Carousel />
+  <main class="container relative">
+    <SwiperCarousel client:idle/>
 	  <Carta />
     <DondeEstamos />
   </main>

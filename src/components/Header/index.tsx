@@ -81,7 +81,7 @@ const Header = () => {
                         >
                             <p
                                 // onClick={scrollTo.handleScrollToInicio}
-                                className="cursor-pointer sm:uppercase text-gray-400 hover:text-black"
+                                className="cursor-pointer sm:uppercase text-gray-400 hover:text-black hover:font-semibold"
                             >
                                 INICIO
                             </p>
