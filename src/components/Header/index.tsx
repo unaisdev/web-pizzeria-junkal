@@ -73,7 +73,7 @@ const Header = () => {
     return (
         <header className="fixed py-4 px-4 sm:py-6 sm:px-6" >
             <div className="flex justify-between items-center">
-                <div className="flex items-center">
+                <div className="flex items-center cursor-pointer" onClick={handleClickInicio}>
                     <img
                         className="h-10 w-10 md:h-14 md:w-14"
                         src="images/pizza-svgrepo-com.svg"
@@ -93,12 +93,11 @@ const Header = () => {
                         >
                             <p
                                 onClick={handleClickInicio}
-                                className="cursor-pointer sm:uppercase text-gray-400 hover:text-black hover:font-semibold"
+                                className="cursor-pointer sm:uppercase text-white hover:underline "
                             >
                                 INICIO
                             </p>
                         </motion.li>
-                        <div className="inline-block min-h-[1em] w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"></div>
                         <motion.li
                             className="px-6"
 
@@ -107,12 +106,11 @@ const Header = () => {
                         >
                             <p
                                 onClick={handleClickCarta}
-                                className="cursor-pointer sm:uppercase text-gray-400 hover:text-black"
+                                className="cursor-pointer sm:uppercase text-white hover:underline"
                             >
                                 NUESTRA CARTA
                             </p>
                         </motion.li>
-                        <div className="inline-block min-h-[1em] w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"></div>
                         <motion.li
                             className="px-6"
                             variants={variants}
@@ -120,12 +118,11 @@ const Header = () => {
                         >
                             <p
                                 // onClick={scrollTo.handleScrollToProjects}
-                                className="cursor-pointer sm:uppercase text-gray-400 hover:text-black"
+                                className="cursor-pointer sm:uppercase text-white  hover:underline"
                             >
                                 HISTORIA
                             </p>
                         </motion.li>
-                        <div className="inline-block min-h-[1em] w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"></div>
                         <motion.li
                             className="px-6"
                             variants={variants}
@@ -133,7 +130,7 @@ const Header = () => {
                         >
                             <p
                                 onClick={handleClickInfo}
-                                className="cursor-pointer sm:uppercase text-gray-400 hover:text-black"
+                                className="cursor-pointer sm:uppercase text-white hover:underline"
                             >
                                 DÓNDE ESTAMOS
                             </p>
