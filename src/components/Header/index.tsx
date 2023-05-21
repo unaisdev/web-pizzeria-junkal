@@ -71,7 +71,7 @@ const Header = () => {
     }, []);
 
     return (
-        <header className="container sticky py-2 px-4 sm:py-4 sm:px-6 border-b-2" >
+        <header className="fixed py-4 px-4 sm:py-6 sm:px-6" >
             <div className="flex justify-between items-center">
                 <div className="flex items-center">
                     <img
@@ -80,8 +80,8 @@ const Header = () => {
                         alt="Snap Logo"
                     />
                     <div className="flex flex-col px-4">
-                        <h1 className="text-lg border-b-4 border-b-slate-100 -mb-3 sm:text-3xl font-bold">Pizzería Junkal</h1>
-                        <h6 className="text-xs sm:text-sm font-thin flex">Es otra historia</h6>
+                        <h1 className="text-lg -mb-2 sm:text-3xl font-bold text-white">Pizzería Junkal</h1>
+                        <h6 className="text-xs sm:text-sm font-thin flex text-white">Es otra historia</h6>
                     </div>
                 </div>
                 <nav className="hidden sm:flex">
@@ -151,7 +151,7 @@ const Header = () => {
                         aria-controls="sidebar"
                         aria-label="Open Menu"
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 24 24"><path d="M3 18v-2h18v2H3Zm0-5v-2h18v2H3Zm0-5V6h18v2H3Z" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 fill-white" viewBox="0 0 24 24"><path d="M3 18v-2h18v2H3Zm0-5v-2h18v2H3Zm0-5V6h18v2H3Z" /></svg>
                     </button>
                 </div>
             </div>

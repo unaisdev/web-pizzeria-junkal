@@ -1,14 +1,21 @@
 .swiper-button-next {
-    display:none !important;   
-
+  display: none !important;
 }
 
 .swiper-button-prev {
-    display:none !important;   
-
+  display: none !important;
 }
 
-.swiper-pagination-bullet-active{
-    background: darkorange !important;
+.swiper-pagination-bullet-active {
+  background: darkorange !important;
 }
 
+.swiper {
+  height: 700px;
+}
+
+@media only screen and (max-width: 600px) {
+  .swiper {
+    height: 100vh;
+  }
+}

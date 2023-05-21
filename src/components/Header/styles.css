@@ -27,3 +27,8 @@ header.scrolled {
 .icon:hover {
   color: #0077b5;
 }
+
+header {
+  background-color: transparent;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0, 0.6), rgb(0, 0, 0));
+}
