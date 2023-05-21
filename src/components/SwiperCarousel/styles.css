@@ -10,12 +10,12 @@
   background: darkorange !important;
 }
 
-.swiper {
+.swiper-photos {
   height: 700px;
 }
 
 @media only screen and (max-width: 600px) {
-  .swiper {
+  .swiper-photos {
     height: (100vh - 20vh);
   }
 }

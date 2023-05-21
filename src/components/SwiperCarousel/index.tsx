@@ -1,4 +1,3 @@
-'use'
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
@@ -17,7 +16,7 @@ const SwiperCarousel = () => {
         <Swiper
             // install Swiper modules
             effect="fade"
-            className='mb-4 '
+            className='mb-4 swiper-photos'
             modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
             spaceBetween={0}
             slidesPerView={1}

@@ -21,7 +21,6 @@ const Carta = () => {
                         <div className="flex flex-col flex-grow justify-between h-full p-2 sm:py-4 sm:pr-8">
                             <div className="flex flex-col justify-around">
                                 <h4 className="menu-title text-xl font-medium pb-2">MARGARITA</h4>
-
                             </div>
                             <div>
                                 <h4 className="menu-detail text-sm sm:text-md">

@@ -30,7 +30,7 @@ const Header = () => {
 
     function handleClickCarta() {
         const anchor = document.querySelector("#carta");
-        const offset = 80; // Ajusta el valor del desplazamiento aquí
+        const offset = 100; // Ajusta el valor del desplazamiento aquí
         // @ts-ignore
         const y = anchor?.getBoundingClientRect().top + window.scrollY - offset;
         window.scrollTo({ top: y, behavior: "smooth" });
@@ -38,7 +38,7 @@ const Header = () => {
 
     function handleClickInfo() {
         const anchor = document.querySelector("#info");
-        const offset = 80; // Ajusta el valor del desplazamiento aquí
+        const offset = 100; // Ajusta el valor del desplazamiento aquí
         // @ts-ignore
         const y = anchor?.getBoundingClientRect()?.top + window.scrollY - offset;
         window.scrollTo({ top: y, behavior: "smooth" });
@@ -71,7 +71,7 @@ const Header = () => {
     }, []);
 
     return (
-        <header className="fixed py-4 px-4 sm:py-6 sm:px-6" >
+        <header className="fixed pt-4 pb-6 px-6" >
             <div className="flex justify-between items-center">
                 <div className="flex items-center cursor-pointer" onClick={handleClickInicio}>
                     <img
