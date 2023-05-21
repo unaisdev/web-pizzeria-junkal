@@ -80,8 +80,8 @@ const Header = () => {
                         alt="Snap Logo"
                     />
                     <div className="flex flex-col px-4">
-                        <h1 className="text-lg border-b-4 -mb-3 sm:text-3xl font-bold">Pizzería Junkal</h1>
-                        <h6 className="text-xs sm:text-sm font-thin">Es otra historia</h6>
+                        <h1 className="text-lg border-b-4 border-b-slate-100 -mb-3 sm:text-3xl font-bold">Pizzería Junkal</h1>
+                        <h6 className="text-xs sm:text-sm font-thin flex">Es otra historia</h6>
                     </div>
                 </div>
                 <nav className="hidden sm:flex">

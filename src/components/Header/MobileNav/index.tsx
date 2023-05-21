@@ -58,7 +58,7 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
                 >
                     <div
                         id="sidebar"
-                        className={`fixed flex justify-between bg-opacity-100 right-0 top-0 w-[180px] h-screen bg-white dark:bg-gray-900 pt-12 p-8 z-50 py-24 transition duration-500`}
+                        className={`fixed flex justify-between bg-opacity-100 right-0 top-0 w-[180px] h-screen bg-white`}
                     >
                         <div className="flex flex-col flex-grow justify-between">
 
@@ -71,7 +71,7 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
                                 >
                                     <p
                                         onClick={handleInicioClick}
-                                        className="cursor-pointer dark:text-white hover:[text-shadow:_1px_3px_8px_rgb(88_88_88_/_80%)] hover:dark:[text-shadow:_1px_3px_8px_rgb(255_255_255_/_100%)]"
+                                        className="cursor-pointer"
                                     >
                                         Inicio
                                     </p>
@@ -82,7 +82,7 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
                                 >
                                     <p
                                         onClick={handleCartaClick}
-                                        className="cursor-pointer dark:text-white hover:[text-shadow:_1px_3px_8px_rgb(88_88_88_/_80%)] hover:dark:[text-shadow:_1px_3px_8px_rgb(255_255_255_/_100%)]"
+                                        className="cursor-pointer"
                                     >
                                         Nuestra carta
                                     </p>
@@ -92,7 +92,7 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
                                     whileTap={{ scale: 0.9 }}
                                 >
                                     <p
-                                        className="cursor-pointer dark:text-white hover:[text-shadow:_1px_3px_8px_rgb(88_88_88_/_80%)] hover:dark:[text-shadow:_1px_3px_8px_rgb(255_255_255_/_100%)]"
+                                        className="cursor-pointer "
                                     >
                                         Historia
                                     </p>
@@ -103,7 +103,7 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
                                 >
                                     <p
                                         onClick={handleInfoClick}
-                                        className="cursor-pointer dark:text-white hover:[text-shadow:_1px_3px_8px_rgb(88_88_88_/_80%)] hover:dark:[text-shadow:_1px_3px_8px_rgb(255_255_255_/_100%)]"
+                                        className="cursor-pointer"
                                     >
                                         Dónde estamos
                                     </p>

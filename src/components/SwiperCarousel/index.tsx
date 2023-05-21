@@ -24,6 +24,7 @@ const SwiperCarousel = () => {
             draggable
             loop
             navigation
+            
             autoplay={{
                 delay: 0,
                 waitForTransition: true,

@@ -7,3 +7,8 @@
     display:none !important;   
 
 }
+
+.swiper-pagination-bullet-active{
+    background: darkorange !important;
+}
+
