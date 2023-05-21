@@ -6,15 +6,6 @@ import MobileNav from "./MobileNav";
 import { motion } from "framer-motion"
 import { debounce } from "../../../helpers";
 
-type Props = {
-    scrollTo: {
-        handleScrollToInicio: () => void,
-        handleScrollToExperience: () => void,
-        handleScrollToProjects: () => void,
-        handleScrollToTechnologies: () => void,
-    };
-}
-
 const variants = {
     open: {
         y: 0,
@@ -39,17 +30,26 @@ const Header = () => {
 
     function handleClickCarta() {
         const anchor = document.querySelector("#carta");
-        anchor?.scrollIntoView({ behavior: "smooth" });
+        const offset = 80; // Ajusta el valor del desplazamiento aquí
+        // @ts-ignore
+        const y = anchor?.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: y, behavior: "smooth" });
     }
 
     function handleClickInfo() {
         const anchor = document.querySelector("#info");
-        anchor?.scrollIntoView({ behavior: "smooth" });
+        const offset = 80; // Ajusta el valor del desplazamiento aquí
+        // @ts-ignore
+        const y = anchor?.getBoundingClientRect()?.top + window.scrollY - offset;
+        window.scrollTo({ top: y, behavior: "smooth" });
     }
 
     function handleClickInicio() {
         const anchor = document.querySelector("body");
-        anchor?.scrollIntoView({ behavior: "smooth" });
+        const offset = 80; // Ajusta el valor del desplazamiento aquí
+        // @ts-ignore
+        const y = anchor?.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: y, behavior: "smooth" });
     }
 
     const handleCloseClick = () => {
@@ -152,7 +152,7 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-            <MobileNav open={open} handleClose={handleCloseClick}/>
+            <MobileNav open={open} handleClose={handleCloseClick} />
         </header>
     )
 }

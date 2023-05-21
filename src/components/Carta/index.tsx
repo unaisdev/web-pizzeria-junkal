@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import './styles.css'
+
 const Carta = () => {
     const [showModal, setShowModal] = useState(false);
 
@@ -14,8 +16,8 @@ const Carta = () => {
 
                 <div className="flex flex-wrap justify-center overflow-auto">
 
-                    <div className="flex w-auto h-auto my-2 mx-4 items-center justify-around bg-slate-200">
-                        <img className="h-56 w-36 sm:w-56 object-center object-cover p-2" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" />
+                    <div className="item-carta flex h-auto my-2 mx-4 items-center justify-around bg-slate-200">
+                        <img className="h-56 w-36 sm:w-56 object-center object-cover p-2 aspect-square" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" />
                         <div className="flex flex-col flex-grow justify-between h-full p-2 sm:py-4 sm:pr-8">
                             <div className="flex flex-col justify-around">
                                 <h4 className="menu-title text-xl font-medium pb-2">MARGARITA</h4>
@@ -35,8 +37,8 @@ const Carta = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex w-auto h-auto my-2 mx-4 items-center justify-around bg-slate-200">
-                        <img className="h-56 w-36 sm:w-56 object-center object-cover p-2" src="https://images.unsplash.com/photo-1627626775846-122b778965ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
+                    <div className="item-carta flex h-auto my-2 mx-4 items-center justify-around bg-slate-200">
+                        <img className="h-56 w-36 sm:w-56 object-center object-cover p-2 aspect-square" src="https://images.unsplash.com/photo-1627626775846-122b778965ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
                         <div className="flex flex-col flex-grow justify-between h-full p-2 sm:py-4 sm:pr-8">
                             <div className="flex flex-col justify-around">
                                 <h4 className="menu-title text-xl font-medium pb-2">MARGARITA</h4>
@@ -56,8 +58,8 @@ const Carta = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex w-auto h-auto my-2 mx-4 items-center justify-around bg-slate-200">
-                        <img className="h-56 w-36 sm:w-56 object-center object-cover p-2" src="https://images.unsplash.com/photo-1571407921708-4202261ea9e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=799&q=80" />
+                    <div className="item-carta flex h-auto my-2 mx-4 items-center justify-around bg-slate-200">
+                        <img className="h-56 w-36 sm:w-56 object-center object-cover p-2  aspect-square" src="https://images.unsplash.com/photo-1571407921708-4202261ea9e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=799&q=80" />
                         <div className="flex flex-col flex-grow justify-between h-full p-2 sm:py-4 sm:pr-8">
                             <div className="flex flex-col justify-around">
                                 <h4 className="menu-title text-xl font-medium pb-2">MARGARITA</h4>
@@ -77,8 +79,8 @@ const Carta = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex w-auto h-auto my-2 mx-4 items-center justify-around bg-slate-200">
-                        <img className="h-56 w-36 sm:w-56 object-center object-cover p-2" src="https://images.unsplash.com/photo-1587085416963-22efba033dd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" />
+                    <div className="item-carta flex h-auto my-2 mx-4 items-center justify-around bg-slate-200">
+                        <img className="h-56 w-36 sm:w-56 object-center object-cover p-2  aspect-square" src="https://images.unsplash.com/photo-1587085416963-22efba033dd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" />
                         <div className="flex flex-col flex-grow justify-between h-full p-2 sm:py-4 sm:pr-8">
                             <div className="flex flex-col justify-around">
                                 <h4 className="menu-title text-xl font-medium pb-2">MARGARITA</h4>

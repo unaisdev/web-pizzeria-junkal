@@ -25,21 +25,30 @@ const variants = {
 };
 
 const MobileNav = ({ open, handleClose }: HeaderProps) => {
-    const handleInicioClick = () => { 
+    const handleInicioClick = () => {
         const anchor = document.querySelector("body");
-        anchor?.scrollIntoView({ behavior: "smooth" });
-        handleClose() 
+        const offset = 80; // Ajusta el valor del desplazamiento aquí
+        // @ts-ignore
+        const y = anchor?.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+        handleClose()
     }
-    const handleCartaClick = () => { 
+    const handleCartaClick = () => {
         const anchor = document.querySelector("#carta");
-        anchor?.scrollIntoView({ behavior: "smooth" });
-        handleClose() 
+        const offset = 80; // Ajusta el valor del desplazamiento aquí
+        // @ts-ignore
+        const y = anchor?.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+        handleClose()
     }
 
-    const handleInfoClick = () => { 
+    const handleInfoClick = () => {
         const anchor = document.querySelector("#info");
-        anchor?.scrollIntoView({ behavior: "smooth" });
-        handleClose() 
+        const offset = 80; // Ajusta el valor del desplazamiento aquí
+        // @ts-ignore
+        const y = anchor?.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+        handleClose()
     }
 
     console.log(open)
