@@ -3,7 +3,13 @@ import "./styles.css";
 const DondeEstamos = () => {
   return (
     <section className="mb-32 text-gray-800">
-      <div className="block shadow-md bg-white">
+      <div className="block bg-white">
+        <div className="py-4">
+          <h1 className="text-center font-bold text-2xl">DÓNDE ESTAMOS</h1>
+          <p className="text-center text-gray-500 font-light text-md">
+            NUN AURKITUKO GAITUZU
+          </p>
+        </div>
         <div className="flex flex-wrap items-center">
           <div className="grow-0 shrink-0 basis-auto block w-full lg:flex lg:w-6/12 xl:w-4/12">
             <div className="flex h-96 flex-grow w-full">
@@ -34,9 +40,7 @@ const DondeEstamos = () => {
                     </div>
                   </div>
                   <div className="grow ml-6">
-                    <p className="font-bold mb-1 text-md">
-                      HORARIO:
-                    </p>
+                    <p className="font-bold mb-1 text-md">HORARIO:</p>
                     <p className="text-gray-500 text-sm">
                       <strong>Lunes:</strong> CERRADO
                     </p>

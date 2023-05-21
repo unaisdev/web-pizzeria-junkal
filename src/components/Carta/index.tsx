@@ -3,14 +3,14 @@ const Carta = () => {
         <div className="flex flex-col mb-4">
             <div className="py-4">
                 <h1 className="text-center font-bold text-2xl">NUESTRA CARTA</h1>
-                <p className="text-center text-gray-500 font-light text-md">Descripcion breve de lo que podria ser</p>
+                <p className="text-center text-gray-500 font-light text-md">GEURE MENUA</p>
             </div>
 
-            <div className="flex flex-wrap justify-center">
-                <div className="relative flex w-auto h-auto p-4 m-4 items-center justify-around bg-slate-200">
-                    <img className="relative h-56 w-56 object-center object-cover" src="https://images.unsplash.com/photo-1571066811602-716837d681de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=536&q=80" />
-                    <div className="flex flex-col flex-grow justify-between h-full pl-4">
-                        <div>
+            <div className="flex flex-wrap justify-center overflow-auto">
+                <div className="flex w-auto h-auto m-4 items-center justify-around bg-slate-200">
+                <img className="h-56 w-36 sm:w-56 object-center object-cover p-2" src="https://plus.unsplash.com/premium_photo-1675103908581-521860726818?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" />
+                    <div className="flex flex-col flex-grow justify-between h-full p-2">
+                        <div className="">
                             <h4 className="menu-title text-xl font-medium pb-2">MARGARITA</h4>
                             <h4 className="menu-detail text-md">
                                 Tomate, mozzarella, parmesano, aceite de oliva y albahaca.
@@ -24,9 +24,9 @@ const Carta = () => {
                         </div>
                     </div>
                 </div>
-                <div className="relative flex w-auto h-auto p-4 m-4 items-center justify-around bg-slate-200">
-                    <img className="relative h-56 w-56 object-center object-cover" src="https://plus.unsplash.com/premium_photo-1675103908581-521860726818?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" />
-                    <div className="flex flex-col flex-grow justify-between h-full pl-4">
+                <div className="flex w-auto h-auto m-4 items-center justify-around bg-slate-200">
+                    <img className="h-56 w-36 sm:w-56 object-center object-cover p-2" src="https://plus.unsplash.com/premium_photo-1675103908581-521860726818?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" />
+                    <div className="flex flex-col flex-grow justify-between h-full p-2">
                         <div>
                         <h4 className="menu-title text-xl font-medium pb-2">MARGARITA</h4>
                             <h4 className="menu-detail text-md">
@@ -41,9 +41,9 @@ const Carta = () => {
                         </div>
                     </div>
                 </div>
-                <div className="relative flex w-auto h-auto p-4 m-4 items-center justify-around bg-slate-200">
-                    <img className="relative h-56 w-56 object-center object-cover" src="https://images.unsplash.com/photo-1572552635104-daf938e0aa1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
-                    <div className="flex flex-col flex-grow justify-between h-full pl-4">
+                <div className="flex w-auto h-auto m-4 items-center justify-around bg-slate-200">
+                    <img className="h-56 w-36 sm:w-56 object-center object-cover p-2" src="https://images.unsplash.com/photo-1572552635104-daf938e0aa1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
+                    <div className="flex flex-col flex-grow justify-between h-full p-2">
                         <div>
                         <h4 className="menu-title text-xl font-medium pb-2">MARGARITA</h4>
                             <h4 className="menu-detail text-md">
@@ -58,9 +58,9 @@ const Carta = () => {
                         </div>
                     </div>
                 </div>
-                <div className="relative flex w-auto h-auto p-4 m-4 items-center justify-around bg-slate-200">
-                    <img className="relative h-56 w-56 object-center object-cover" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" />
-                    <div className="flex flex-col flex-grow justify-between h-full pl-4">
+                <div className="flex w-auto h-auto m-4 items-center justify-around bg-slate-200">
+                    <img className="h-56 w-36 sm:w-56 object-center object-cover p-2" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" />
+                    <div className="flex flex-col flex-grow justify-between h-full p-2">
                         <div>
                         <h4 className="menu-title text-xl font-medium pb-2">MARGARITA</h4>
                             <h4 className="menu-detail text-md">
