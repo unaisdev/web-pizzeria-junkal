@@ -2,9 +2,9 @@ import "./styles.css";
 
 const DondeEstamos = () => {
   return (
-    <section className="mb-32 text-gray-800">
+    <section className="mb-32 text-gray-800 py-4">
       <div className="block bg-white">
-        <div className="py-4">
+        <div className="pb-4">
           <h1 className="text-center font-bold text-2xl">DÓNDE ESTAMOS</h1>
           <p className="text-center text-gray-500 font-light text-md">
             NUN AURKITUKO GAITUZU

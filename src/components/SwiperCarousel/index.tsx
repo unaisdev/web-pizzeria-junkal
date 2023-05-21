@@ -17,7 +17,7 @@ const SwiperCarousel = () => {
         <Swiper
             // install Swiper modules
             effect="fade"
-            className='h-96'
+            className='h-96 mb-4'
             modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
             spaceBetween={0}
             slidesPerView={1}

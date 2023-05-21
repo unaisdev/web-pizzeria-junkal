@@ -4,8 +4,8 @@ const Carta = () => {
     const [showModal, setShowModal] = useState(false);
 
     return (
-        <div className="flex flex-col mb-4">
-            <div className="py-4">
+        <div className="flex flex-col py-4">
+            <div className="">
                 <h1 className="text-center font-bold text-2xl">NUESTRA CARTA</h1>
                 <p className="text-center text-gray-500 font-light text-md">GEURE MENUA</p>
             </div>
