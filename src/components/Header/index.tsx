@@ -69,6 +69,9 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
             const position = window.scrollY;
+            console.log(position);
+            console.log(scrolled);
+
             setScrolled(position > 0)
             const opacity = position > 600 ? 0.75 : 1; /* Ajusta el nivel de opacidad que deseas para el fondo al hacer scroll */
             setHeaderOpacity(opacity);
