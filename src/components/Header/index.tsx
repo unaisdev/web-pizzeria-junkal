@@ -79,7 +79,7 @@ const Header = () => {
 
     return (
         <header className="fixed" >
-            <div className={`${scrolled ? '-translate-y-20' : ''} flex justify-around px-1 py-2 transition duration-300 transform translate-y-0 border-b-2`}>
+            <div className={`${scrolled ? '-translate-y-20' : 'translate-y-0 '} flex justify-around px-1 py-2 transition transform duration-300 border-b-2`}>
                 <a href="tel:943265863" className="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2 fill-red-500" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -100,7 +100,7 @@ const Header = () => {
                     <h6 className="text-xs sm:text-sm font-medium flex  text-white">pizzeriajunkal@gmail.com</h6>
                 </a>
             </div>
-            <div className={`${scrolled && '-translate-y-8'} flex transition duration-300 transform translate-y-0 justify-between items-center  p-4`}>
+            <div className={`${scrolled ? '-translate-y-8': 'translate-y-0'} flex transition duration-300 justify-between items-center  p-4`}>
                 <div>
                     <div className="flex items-center cursor-pointer" onClick={handleClickInicio}>
                         <img
