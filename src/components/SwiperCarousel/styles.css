@@ -18,6 +18,6 @@
 
 @media only screen and (max-width: 600px) {
   .swiper-photos {
-    height: (100vh - 20vh);
+    height: 600px;
   }
 }
