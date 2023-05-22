@@ -65,14 +65,31 @@ const Header = () => {
         setOpen(false)
     }
 
+    const handleScrollEnd = () => {
+        setScrolled(false);
+
+    };
+
     useEffect(() => {
+        let scrollingTimeout:number = 0;
+
         const handleScroll = () => {
             setScrolled((window.scrollY > 0))
+            clearTimeout(scrollingTimeout);
+
+            // Establece scrolled en false después de 300ms de inactividad de scroll
+            scrollingTimeout = setTimeout(() => {
+                setScrolled(false);
+            }, 1200);
         };
 
         window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scrollend", handleScrollEnd); // Evento personalizado al terminar el scroll
+
         return () => {
             window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("scrollend", handleScrollEnd);
+
         };
     }, []);
 
