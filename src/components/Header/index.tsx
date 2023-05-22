@@ -52,6 +52,14 @@ const Header = () => {
         window.scrollTo({ top: y, behavior: "smooth" });
     }
 
+    function handleClickColaboradores() {
+        const anchor = document.querySelector("#colaboradores");
+        const offset = 110; // Ajusta el valor del desplazamiento aquí
+        // @ts-ignore
+        const y = anchor?.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+    }
+
     const handleCloseClick = () => {
         setOpen(false)
     }
@@ -117,10 +125,10 @@ const Header = () => {
                             whileTap={{ scale: 0.9 }}
                         >
                             <p
-                                // onClick={scrollTo.handleScrollToProjects}
+                                onClick={handleClickColaboradores}
                                 className="cursor-pointer sm:uppercase text-white  hover:underline"
                             >
-                                HISTORIA
+                                COLABORADORES
                             </p>
                         </motion.li>
                         <motion.li

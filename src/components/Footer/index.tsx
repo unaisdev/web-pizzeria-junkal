@@ -13,7 +13,7 @@ const Footer = () => {
                     <p className="font-medium text-xs">2023 - Pizzeria Junkal</p>
                     <p className="max-w-md font-extralight text-center leading-relaxed text-gray-500 text-xs md:text-sm ">
                         <strong></strong>
-                        <span className="flex flex-col text-xxxs md:text-xs">diseñado por <a className="text-xxs" href="https://github.com/unaisdev">Unai Canales</a></span>
+                        <span className="flex flex-col items-center justify-center md:flex-row text-xxxs md:text-xs ">diseñado por <a className="text-xs md:text-sm md:ml-4" href="https://github.com/unaisdev">Unai Canales</a></span>
                         
                     </p>
                 </div>

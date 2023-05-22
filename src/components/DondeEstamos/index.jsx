@@ -2,15 +2,15 @@ import "./styles.css";
 
 const DondeEstamos = () => {
   return (
-    <section id="info" className="mb-32 text-gray-800 py-4">
-      <div className="block bg-white">
-        <div className="pb-4">
-          <h1 className="text-center font-bold text-2xl">DÓNDE ESTAMOS</h1>
-          <p className="text-center text-gray-500 font-light text-md">
+    <section id="info" className="py-6">
+      <div className="block">
+      <div className="pb-4 pl-4">
+          <h1 className="font-bold text-xl md:text-3xl">DÓNDE ESTAMOS</h1>
+          <p className="text-gray-500 font-light text-sm md:text-md">
             NUN AURKITUKO GAITUZU
           </p>
         </div>
-        <div className="flex flex-wrap items-center">
+        <div className="flex flex-wrap items-center bg-slate-200 px-4">
           <div className="grow-0 shrink-0 basis-auto block w-full lg:flex lg:w-6/12 xl:w-4/12">
             <div className="flex h-96 flex-grow w-full">
               <iframe

@@ -23,7 +23,7 @@ const SwiperCarousel = () => {
             draggable
             loop
             navigation
-            
+            freeMode
             autoplay={{
                 delay: 0,
                 waitForTransition: true,

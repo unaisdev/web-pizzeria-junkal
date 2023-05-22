@@ -51,6 +51,14 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
         handleClose()
     }
 
+    function handleClickColaboradores() {
+        const anchor = document.querySelector("#colaboradores");
+        const offset = 80; // Ajusta el valor del desplazamiento aquí
+        // @ts-ignore
+        const y = anchor?.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+    }
+
     console.log(open)
     return (
         <>
@@ -98,9 +106,10 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
                                     whileTap={{ scale: 0.9 }}
                                 >
                                     <p
+                                        onClick={handleClickColaboradores}
                                         className="cursor-pointer "
                                     >
-                                        Historia
+                                        Colaboradores
                                     </p>
                                 </motion.li>
                                 <motion.li
