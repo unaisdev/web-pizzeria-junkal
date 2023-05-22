@@ -97,7 +97,7 @@ const DondeEstamos = () => {
                 </div>
               </div>
             </div> */}
-            <div className="">
+            {/* <div className="">
               <div className="flex flex-wrap justify-around">
                 <div className="flex text-center">
                   <div>
@@ -116,7 +116,7 @@ const DondeEstamos = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
