@@ -35,10 +35,24 @@ const SwiperCarousel = () => {
             onSlideChange={() => console.log('slide change')}
         >
             <SwiperSlide>
-                <img className='w-full h-full object-cover' src='https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80' />
+                <div className='w-full h-full'>
+                    <div className='swiper-box h-32  absolute bottom-0 w-full text-center flex items-center justify-center bg-opacity-20'>
+                        {/* <div className='w-auto pt-10'>
+                            <h2 className='font-semibold text-sm md:text-xl text-white'>¡Disfruta de unas maravillosas pizzas en nuestra pizzería!</h2>
+                            <p className='text-xs md:text-sm text-white'>Hechas con todo el cariño y siempre con el producto que corresponde.</p>
+                        </div> */}
+
+                    </div>
+                    <video className='w-full h-full object-cover flex justify-center items-center' playsInline autoPlay muted loop id="myVideo">
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-cook-mixing-flour-for-a-dough-42464-large.mp4" type="video/mp4" />
+                    </video>
+                </div>
+
             </SwiperSlide>
             <SwiperSlide>
-                <img className='w-full h-full object-cover' src='https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80' />
+                <video className='w-full h-full object-cover' playsInline autoPlay muted loop id="myVideo">
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-chef-doing-acrobatics-with-the-dough-of-a-pizza-42472-large.mp4" type="video/mp4" />
+                </video>
             </SwiperSlide>
             <SwiperSlide>
                 <img className='w-full h-full object-cover' src='https://images.unsplash.com/photo-1613564834361-9436948817d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=743&q=80' />

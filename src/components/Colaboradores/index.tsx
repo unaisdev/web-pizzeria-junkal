@@ -17,7 +17,7 @@ const Colaboradores = () => {
         <>
 
             <section id="colaboradores" className='my-4'>
-                <div className="pb-4 pl-4">
+                <div className="pb-4 pl-4 md:pl-12">
                     <h1 className="font-bold text-xl md:text-3xl">COLABORADORES</h1>
                     <p className="text-gray-500 font-light text-md">HARREMANAK</p>
                 </div>

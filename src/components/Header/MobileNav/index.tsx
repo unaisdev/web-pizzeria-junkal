@@ -35,7 +35,7 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
     }
     const handleCartaClick = () => {
         const anchor = document.querySelector("#carta");
-        const offset = 80; // Ajusta el valor del desplazamiento aquí
+        const offset = 90; // Ajusta el valor del desplazamiento aquí
         // @ts-ignore
         const y = anchor?.getBoundingClientRect().top + window.pageYOffset - offset;
         window.scrollTo({ top: y, behavior: "smooth" });

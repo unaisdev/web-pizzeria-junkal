@@ -9,12 +9,12 @@ const Carta = () => {
         <section id="carta">
 
             <div className="flex flex-col py-4">
-                <div className="pb-4 pl-4">
+                <div className="pb-4 pl-4 md:pl-12">
                     <h1 className="font-bold text-xl md:text-3xl">NUESTRA CARTA</h1>
                     <h2 className="text-gray-500 font-light text-sm md:text-md">GEURE MENUA</h2>
                 </div>
                 <div className="text-center pb-2">
-                    <h3 className="font-semibold text-2xl">PIZZAS</h3>
+                    <h3 className="font-semibold text-lg md:text-2xl">PIZZAS</h3>
                 </div>
                 <div className="flex flex-wrap justify-center overflow-auto">
 
