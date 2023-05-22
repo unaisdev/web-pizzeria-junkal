@@ -82,9 +82,9 @@ const Header = () => {
 
     return (
         <header className="fixed" >
-            <div className={`${scrolled ? '-translate-y-full' : ''} flex justify-around px-1 py-2 transition duration-300 transform translate-y-0 `}>
+            <div className={`${scrolled ? '-translate-y-full' : ' mb-2'} flex justify-around px-1 py-2 transition duration-300 transform translate-y-0 border-b-2`}>
                 <a href="tel:943265863" className="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2 fill-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2 fill-white" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
                         <path d="M15 7a2 2 0 0 1 2 2"></path>
@@ -94,13 +94,13 @@ const Header = () => {
                     <h6 className="text-xs sm:text-sm font-semibold flex text-white"><span className="font-light mr-1">+34</span> 943 26 58 63</h6>
                 </a>
                 <a href="mailto:unaicanales@gmail.com" className="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2 text-white" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" stroke-width="0" fill="currentColor"></path>
-                        <path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" stroke-width="0" fill="currentColor"></path>
+                        <path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" strokeWidth="0" fill="currentColor"></path>
+                        <path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" strokeWidth="0" fill="currentColor"></path>
                     </svg>
 
-                    <h6 className="text-xs sm:text-sm font-semibold flex  text-white">pizzeriajunkal@gmail.com</h6>
+                    <h6 className="text-xs sm:text-sm font-medium flex  text-white">pizzeriajunkal@gmail.com</h6>
                 </a>
             </div>
             <div className={`${scrolled ? '-translate-y-6' : 'flex'} flex transition duration-300 transform translate-y-0  justify-between items-center px-4 pb-4`}>
