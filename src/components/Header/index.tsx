@@ -94,16 +94,16 @@ const Header = () => {
         };
     }, []);
 
-    return (
-        <header className="fixed" >
-            <div className={`${scrolled ? '-translate-y-20' : 'translate-y-0 '} flex justify-between md:justify-end items-center px-4 py-2 transition transform duration-300 border-b-2`}>
+    return (<>
+        <header className={`${scrolled ? '-translate-y-16' : 'translate-y-0 '} fixed transition transform duration-300`} >
+            <div className={`flex justify-between md:justify-end items-center px-2 py-2 border-b-2 bg-black`}>
                 <div className="text-white mr-20">
-                    <p className="text-xs md:text-lg">{todayString()} <span className="text-xxs md:text-sm">{obtenerFechaActual()}</span></p>
-                    <p className="text-sm text-red-500 md:text-center">Cerrado</p>
+                    <p className="flex items-baseline text-xs md:text-lg">{todayString()} <span className="pl-2 text-xxs md:text-sm">{obtenerFechaActual()}</span></p>
+                    <p className="text-xs md:text-sm text-red-500 md:text-center">Cerrado</p>
                 </div>
                 <div className="flex flex-col items-end">
                     <a href="tel:943265863" className="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2 fill-red-500" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2 fill-green-500" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
                             <path d="M15 7a2 2 0 0 1 2 2"></path>
@@ -124,7 +124,7 @@ const Header = () => {
                 </div>
 
             </div>
-            <div className={`${scrolled ? '-translate-y-14' : 'translate-y-0'} flex transition duration-300 justify-between items-center  p-4`}>
+            <div className={`flex transition duration-300 justify-between items-center px-6 md:px-12 py-6 md:py-8`}>
                 <div>
                     <div className="flex items-center cursor-pointer" onClick={handleClickInicio}>
                         <img
@@ -133,7 +133,7 @@ const Header = () => {
                             alt="Logo Pizzeria Junkal Irun"
                         />
                         <div className="flex flex-col px-4">
-                            <h1 className="text-lg -mb-2 sm:text-xl md:text-2xl lg:text-3xl font-bold text-white">Pizzería Junkal</h1>
+                            <h1 className="text-2xl -mb-2 md:text-2xl lg:text-3xl font-bold text-white">Pizzería Junkal</h1>
                             <h6 className="text-xs sm:text-sm font-thin flex text-white">Es otra historia</h6>
 
 
@@ -144,7 +144,7 @@ const Header = () => {
 
                 </div>
 
-                <div className="flex bg-white">
+                <div className="flex">
                     <div className="">
 
                     </div>
@@ -219,8 +219,9 @@ const Header = () => {
 
             </div>
 
-            <MobileNav open={open} handleClose={handleCloseClick} />
         </header >
+        <MobileNav open={open} handleClose={handleCloseClick} />
+    </>
     )
 }
 

@@ -4,7 +4,7 @@ header {
   left: 0;
   width: 100%;
   background-color: #fff; /* Cambia el color de fondo según tus preferencias */
-  z-index: 999;
+  z-index: 10;
   transition: opacity 0.5s ease; /* Añade una transición suave al cambiar la opacidad */
 }
 
@@ -30,5 +30,5 @@ header.scrolled {
 
 header {
   background-color: transparent;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 1));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 1));
 }
