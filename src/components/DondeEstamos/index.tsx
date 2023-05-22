@@ -124,4 +124,4 @@ const DondeEstamos = () => {
   );
 };
 
-export default DondeEstamos;
+export default DondeEstamos

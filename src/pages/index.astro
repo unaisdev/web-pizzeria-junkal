@@ -11,14 +11,14 @@ import Presentacion from "../components/Presentacion";
 ---
 
 <Layout title="Pizzería Junkal - Irun">
-  <Header client:idle />
+  <Header client:load />
 
   <main class="">
     <Presentacion />
 	  <Carta />
-    <SwiperCarousel client:idle/>
+    <SwiperCarousel client:load/>
 
-    <Colaboradores client:idle/>
+    <Colaboradores client:load/>
     <DondeEstamos />
   </main>
   <Footer />
