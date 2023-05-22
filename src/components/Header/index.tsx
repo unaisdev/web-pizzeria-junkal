@@ -103,7 +103,7 @@ const Header = () => {
                     <h6 className="text-xs sm:text-sm font-semibold flex  text-white">pizzeriajunkal@gmail.com</h6>
                 </a>
             </div>
-            <div className={`${scrolled ? '-translate-y-8' : 'flex'} flex transition duration-300 transform translate-y-0  justify-between items-center p-4`}>
+            <div className={`${scrolled ? '-translate-y-6' : 'flex'} flex transition duration-300 transform translate-y-0  justify-between items-center px-4 pb-4`}>
                 <div>
                     <div className="flex items-center cursor-pointer" onClick={handleClickInicio}>
                         <img
