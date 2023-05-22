@@ -7,14 +7,17 @@ import Footer from "../components/Footer";
 import DondeEstamos from "../components/DondeEstamos";
 import SwiperCarousel from "../components/SwiperCarousel";
 import Colaboradores from "../components/Colaboradores";
+import Presentacion from "../components/Presentacion";
 ---
 
 <Layout title="Pizzería Junkal - Irun">
   <Header client:idle />
 
   <main class="">
-    <SwiperCarousel client:idle/>
+    <Presentacion />
 	  <Carta />
+    <SwiperCarousel client:idle/>
+
     <Colaboradores client:idle/>
     <DondeEstamos />
   </main>
