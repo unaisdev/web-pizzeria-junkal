@@ -65,24 +65,6 @@ const Header = () => {
         setOpen(false)
     }
 
-    const todayString = () => {
-        var diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
-
-        return diasSemana[new Date().getDay()]
-    }
-
-    const obtenerFechaActual = (): string => {
-        const fecha = new Date();
-        const dia = fecha.getDate();
-        const mes = fecha.getMonth() + 1;
-        const anio = fecha.getFullYear();
-
-        const diaFormateado = dia.toString().padStart(2, '0');
-        const mesFormateado = mes.toString().padStart(2, '0');
-
-        return `${diaFormateado}/${mesFormateado}/${anio}`;
-    };
-
     useEffect(() => {
         const handleScroll = () => {
             setScrolled((window.scrollY > 0))
@@ -95,12 +77,8 @@ const Header = () => {
     }, []);
 
     return (<>
-        <header className={`${scrolled ? '-translate-y-16' : 'translate-y-0 '} fixed transition transform duration-300`} >
-            <div className={`flex justify-between md:justify-end items-center px-2 py-2 border-b-2 bg-black`}>
-                <div className="text-white mr-20">
-                    <p className="flex items-baseline text-xs md:text-lg">{todayString()} <span className="pl-2 text-xxs md:text-sm">{obtenerFechaActual()}</span></p>
-                    <p className="text-xs md:text-sm text-red-500 md:text-center">Cerrado</p>
-                </div>
+        <header className={`${scrolled ? '-translate-y-10 md:-translate-y-16 ' : 'translate-y-0 '} fixed transition transform duration-300`} >
+            <div className={`flex justify-end items-center px-2 py-2 `}>
                 <div className="flex flex-col items-end">
                     <a href="tel:943265863" className="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2 fill-green-500" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -124,7 +102,7 @@ const Header = () => {
                 </div>
 
             </div>
-            <div className={`flex transition duration-300 justify-between items-center px-6 md:px-12 py-6 md:py-8`}>
+            <div className={`flex transition duration-300 justify-between items-center px-4 md:px-12 pt-2 pb-8 md:py-8`}>
                 <div>
                     <div className="flex items-center cursor-pointer" onClick={handleClickInicio}>
                         <img
