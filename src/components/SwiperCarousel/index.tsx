@@ -16,7 +16,7 @@ const SwiperCarousel = () => {
         <Swiper
             // install Swiper modules
             effect="fade"
-            className='py-12  swiper-photos'
+            className='!py-12   swiper-photos'
             modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
             spaceBetween={0}
             slidesPerView={1}
