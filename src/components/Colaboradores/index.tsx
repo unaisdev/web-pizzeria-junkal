@@ -18,7 +18,7 @@ const Colaboradores = () => {
 
             <section id="colaboradores" className='my-4'>
                 <div className="pb-4 pl-4">
-                    <h1 className="font-bold text-2xl">COLABORADORES</h1>
+                    <h1 className="font-bold text-xl md:text-3xl">COLABORADORES</h1>
                     <p className="text-gray-500 font-light text-md">HARREMANAK</p>
                 </div>
 
@@ -44,7 +44,7 @@ const Colaboradores = () => {
 
 
 
-            <Swiper
+            {/* <Swiper
                 // install Swiper modules
                 effect="fade"
                 className='mb-4'
@@ -65,7 +65,7 @@ const Colaboradores = () => {
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
-                {/* <SwiperSlide className='flex justify-around'>
+                <SwiperSlide className='flex justify-around'>
                     <div className="h-24 w-24 md:w-52 md:h-52 bg-slate-200 rounded-full m-2 shadow-md">
 
                     </div>
@@ -86,10 +86,10 @@ const Colaboradores = () => {
                     <div className="h-24 w-24 md:w-52 md:h-52 bg-slate-200 rounded-full m-2 shadow-md">
 
                     </div>
-                </SwiperSlide> */}
+                </SwiperSlide>
 
-            </Swiper>
-        </>
+            </Swiper>*/}
+        </> 
     )
 }
 
