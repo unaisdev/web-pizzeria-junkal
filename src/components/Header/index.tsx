@@ -5,9 +5,6 @@ import './styles.css';
 import MobileNav from "./MobileNav";
 import { motion } from "framer-motion"
 import { debounce } from "../../../helpers";
-import { hasScrolled } from "../scrollStore";
-import { useStore } from "@nanostores/react";
-
 
 const variants = {
     open: {
@@ -28,9 +25,9 @@ const variants = {
 
 
 const Header = () => {
+    const [scrolled, setScrolled] = useState(false);
     const [headerOpacity, setHeaderOpacity] = useState(1);
     const [open, setOpen] = useState(false)
-    const $isScrolled = useStore(hasScrolled);
 
     function handleClickCarta() {
         const anchor = document.querySelector("#carta");
@@ -69,9 +66,23 @@ const Header = () => {
     }
 
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const position = window.scrollY;
+            setScrolled(position > 0)
+            const opacity = position > 600 ? 0.75 : 1; /* Ajusta el nivel de opacidad que deseas para el fondo al hacer scroll */
+            setHeaderOpacity(opacity);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <header className="fixed" >
-            <div className={`${$isScrolled ? '-translate-y-full' : ' mb-2'} flex justify-around px-1 py-2 transition duration-300 transform translate-y-0 border-b-2`}>
+            <div className={`${scrolled ? '-translate-y-full' : ' mb-2'} flex justify-around px-1 py-2 transition duration-300 transform translate-y-0 border-b-2`}>
                 <a href="tel:943265863" className="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2 fill-white" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -92,7 +103,7 @@ const Header = () => {
                     <h6 className="text-xs sm:text-sm font-medium flex  text-white">pizzeriajunkal@gmail.com</h6>
                 </a>
             </div>
-            <div className={`${$isScrolled ? '-translate-y-6' : 'flex'} flex transition duration-300 transform translate-y-0  justify-between items-center px-4 pb-4`}>
+            <div className={`${scrolled ? '-translate-y-6' : 'flex'} flex transition duration-300 transform translate-y-0  justify-between items-center px-4 pb-4`}>
                 <div>
                     <div className="flex items-center cursor-pointer" onClick={handleClickInicio}>
                         <img
