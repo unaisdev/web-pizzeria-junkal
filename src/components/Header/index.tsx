@@ -84,8 +84,8 @@ const Header = () => {
                 <div className="flex items-center cursor-pointer" onClick={handleClickInicio}>
                     <img
                         className="h-10 w-10 md:h-14 md:w-14"
-                        src="images/pizza-svgrepo-com.svg"
-                        alt="Snap Logo"
+                        src="images/logo.svg"
+                        alt="Logo Pizzeria Junkal Irun"
                     />
                     <div className="flex flex-col px-4">
                         <h1 className="text-lg -mb-2 sm:text-3xl font-bold text-white">Pizzería Junkal</h1>

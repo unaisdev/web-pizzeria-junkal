@@ -53,7 +53,7 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
 
     function handleClickColaboradores() {
         const anchor = document.querySelector("#colaboradores");
-        const offset = 80; // Ajusta el valor del desplazamiento aquí
+        const offset = 100; // Ajusta el valor del desplazamiento aquí
         // @ts-ignore
         const y = anchor?.getBoundingClientRect().top + window.scrollY - offset;
         window.scrollTo({ top: y, behavior: "smooth" });

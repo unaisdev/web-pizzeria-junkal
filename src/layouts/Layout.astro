@@ -14,12 +14,13 @@ const { title } = Astro.props;
   <head>
     <SEO
       title="Pizzería Junkal - Irun"
-      description="Pizzería Junkal - Irun | ¡Disfruta unas riquísimas pizzas en Pizzería Junkal! Elaboradas con los mejores ingredientes y cocidas en nuestro horno de leña. ¡Ven a recogerla y disfrútala recién hecha! Nos encontramos en ..."
+      description="Pizzería Junkal - Irun | ¡Disfruta unas riquísimas pizzas en Pizzería Junkal! Elaboradas con los mejores ingredientes y cocidas en nuestro horno de leña. ¡Ven a recogerla y disfrútala recién hecha! Nos encontramos en Santiago Kalea, 41, 20304 Irun, Gipuzkoa."
+      canonical="http://pizzeriajunkal.vercel.app"
       openGraph={{
         basic: {
           title: "Pizzería Junkal - Irun",
           type: "Pizza",
-          image: "/images/principal.jpg",
+          image: "/images/principal.webp",
           url: "http://pizzeriajunkal.vercel.app",
         },
       }}
@@ -33,9 +34,16 @@ const { title } = Astro.props;
         meta: [
           {
             name: "twitter:image",
-            content: "/images/principal.jpg",
+            content: "/images/principal.webp",
           },
-          { name: "twitter:title", content: "Pizzería Junkal - Irun" },
+          {
+            name: "twitter:title",
+            content: "Pizzería Junkal - Irun",
+          },
+          {
+            name: "twitter:description",
+            content: "Pizzería Junkal - Irun",
+          },
         ],
       }}
     />
@@ -46,7 +54,7 @@ const { title } = Astro.props;
     <meta property="og:title" content="Pizzería Junkal - Irun" />
     <meta
       property="og:description"
-      content="Pizzería Junkal - Irun | ¡Disfruta unas riquísimas pizzas en Pizzería Junkal! Elaboradas con los mejores ingredientes y cocidas en nuestro horno de leña. ¡Ven a recogerla y disfrútala recién hecha! Nos encontramos en ..."
+      content="Pizzería Junkal - Irun | ¡Disfruta unas riquísimas pizzas en Pizzería Junkal! Elaboradas con los mejores ingredientes y cocidas en nuestro horno de leña. ¡Ven a recogerla y disfrútala recién hecha! Nos encontramos en Santiago Kalea, 41, 20304 Irun, Gipuzkoa."
     />
     <meta
       name="keywords"
