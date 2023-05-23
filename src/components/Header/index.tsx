@@ -26,6 +26,7 @@ const variants = {
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [hideMail, setHideMail] = useState(false);
     const [headerOpacity, setHeaderOpacity] = useState(1);
     const [open, setOpen] = useState(false)
 
@@ -65,16 +66,15 @@ const Header = () => {
         setOpen(false)
     }
 
-    const handleScrollEnd = () => {
-        setScrolled(false);
 
-    };
 
     useEffect(() => {
         let scrollingTimeout: number = 0;
 
         const handleScroll = () => {
             setScrolled((window.scrollY > 0))
+            setHideMail((window.scrollY > 20));
+
             clearTimeout(scrollingTimeout);
 
             // Establece scrolled en false después de 300ms de inactividad de scroll
@@ -84,11 +84,9 @@ const Header = () => {
         };
 
         window.addEventListener("scroll", handleScroll);
-        window.addEventListener("scrollend", handleScrollEnd); // Evento personalizado al terminar el scroll
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
-            window.removeEventListener("scrollend", handleScrollEnd);
 
         };
     }, []);
@@ -109,7 +107,7 @@ const Header = () => {
 
                             <h6 className="text-xs sm:text-sm font-semibold flex text-white"><span className="font-light mr-1">+34</span> 943 26 58 63</h6>
                         </a>
-                        <a href="mailto:unaicanales@gmail.com" className={`${window.scrollY ? 'hidden': 'flex'} items-center`}>
+                        <a href="mailto:unaicanales@gmail.com" className={`${hideMail ? 'hidden': 'flex'} items-center`}>
                             <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mr-2 text-white" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" strokeWidth="0" fill="currentColor"></path>
