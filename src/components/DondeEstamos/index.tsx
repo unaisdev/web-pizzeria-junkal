@@ -6,7 +6,7 @@ const DondeEstamos = () => {
       <div className="block">
         <div className="pb-4 pl-4  md:pl-12">
           <h1 className="font-bold text-xl md:text-3xl">DÓNDE ESTAMOS</h1>
-          <p className="text-gray-500 font-light text-sm md:text-md">
+          <p className="text-gray-500 font-light text-md">
             NUN AURKITUKO GAITUZU
           </p>
         </div>

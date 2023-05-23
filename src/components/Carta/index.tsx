@@ -18,7 +18,7 @@ const Carta = () => {
                     <div className="py-6 pl-4  md:pl-12">
 
                         <h1 className="font-bold text-xl md:text-3xl">NUESTRA CARTA</h1>
-                        <h2 className="text-gray-500 font-light text-sm md:text-md">GEURE MENUA</h2>
+                        <h2 className="text-gray-500 font-light text-md">GEURE MENUA</h2>
                     </div>
                     <div className="">
                         <ul className="flex flex-wrap justify-around text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
