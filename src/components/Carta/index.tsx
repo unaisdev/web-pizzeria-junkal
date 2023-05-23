@@ -129,7 +129,96 @@ const Carta = () => {
                                     </div>
                                 </div>
                             </div>}
-                        {activeTab === 2 && <div> </div>}
+                        {activeTab === 2 &&
+                            <div>
+                                <div className="flex flex-wrap justify-center overflow-auto py-4">
+
+                                    <div className="item-carta flex h-auto my-2 mx-4 items-center justify-around bg-slate-200">
+                                        <img className="h-56 w-36 sm:w-56 object-center object-cover p-2 aspect-square" src="https://images.unsplash.com/photo-1639744211487-b27e3551b07c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" />
+                                        <div className="flex flex-col flex-grow justify-between h-full p-2 sm:py-4 sm:pr-8">
+                                            <div className="flex flex-col justify-around">
+                                                <h4 className="menu-title text-xl font-medium pb-2">TIRAMISÚ</h4>
+                                            </div>
+                                            <div>
+                                                <h4 className="menu-detail text-sm sm:text-md">
+                                                    Capas de bizcocho empapado en café, mascarpone y cacao en polvo espolvoreado.
+                                                </h4>
+                                                <hr className="h-0.5 bg-gray-300 mx-4 my-2" />
+                                                <h4 className="menu-detail text-xs text-gray-500">
+                                                    Italiako pastela, kafean bustitako bizkotxo-geruzekin, maskarpone krema eta kakao hautsez hautseztatua.
+
+                                                </h4>
+                                            </div>
+                                            <div className="col-span-1 menu-price-detail">
+                                                <h4 className="menu-price font-medium text-lg sm:text-2xl text-right">10,00 €</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="item-carta flex h-auto my-2 mx-4 items-center justify-around bg-slate-200">
+                                        <img className="h-56 w-36 sm:w-56 object-center object-cover p-2 aspect-square" src="https://images.unsplash.com/photo-1524351199678-941a58a3df50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" />
+                                        <div className="flex flex-col flex-grow justify-between h-full p-2 sm:py-4 sm:pr-8">
+                                            <div className="flex flex-col justify-around">
+                                                <h4 className="menu-title text-xl font-medium pb-2">CHEESECAKE</h4>
+
+                                            </div>
+                                            <div>
+                                                <h4 className="menu-detail text-sm sm:text-md">
+                                                    Tarta de queso con base crujiente, relleno cremoso de queso y fresas.
+                                                </h4>
+                                                <hr className="h-0.5 bg-gray-300 mx-4 my-2" />
+                                                <h4 className="menu-detail text-xs text-gray-500">
+                                                    Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.
+                                                </h4>
+                                            </div>
+                                            <div className="col-span-1 menu-price-detail">
+                                                <h4 className="menu-price font-medium text-lg sm:text-2xl text-right"><span className="mx-2 text-xs">P.V.P</span>10,00 €</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="item-carta flex h-auto my-2 mx-4 items-center justify-around bg-slate-200">
+                                        <img className="h-56 w-36 sm:w-56 object-center object-cover p-2  aspect-square" src="https://images.unsplash.com/photo-1615235739538-95040f341ba8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" />
+                                        <div className="flex flex-col flex-grow justify-between h-full p-2 sm:py-4 sm:pr-8">
+                                            <div className="flex flex-col justify-around">
+                                                <h4 className="menu-title text-xl font-medium pb-2">CRÈME BRÛLÉE</h4>
+
+                                            </div>
+                                            <div>
+                                                <h4 className="menu-detail text-sm sm:text-md">
+                                                    Crema de vainilla suave y caramelizada en la parte superior.
+                                                </h4>
+                                                <hr className="h-0.5 bg-gray-300 mx-4 my-2" />
+                                                <h4 className="menu-detail text-xs text-gray-500">
+                                                    Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.
+                                                </h4>
+                                            </div>
+                                            <div className="col-span-1 menu-price-detail">
+                                                <h4 className="menu-price font-medium text-lg sm:text-2xl text-right"><span className="mx-2 text-xs">P.V.P</span>10,00 €</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="item-carta flex h-auto my-2 mx-4 items-center justify-around bg-slate-200">
+                                        <img className="h-56 w-36 sm:w-56 object-center object-cover p-2  aspect-square" src="https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
+                                        <div className="flex flex-col flex-grow justify-between h-full p-2 sm:py-4 sm:pr-8">
+                                            <div className="flex flex-col justify-around">
+                                                <h4 className="menu-title text-xl font-medium pb-2">TARTA DE MANZANA</h4>
+                                            </div>
+                                            <div>
+                                                <h4 className="menu-detail text-sm sm:text-md">
+                                                    Delicioso pastel de manzana con base de masa quebrada y un toque de canela.
+                                                </h4>
+                                                <hr className="h-0.5 bg-gray-300 mx-4 my-2" />
+                                                <h4 className="menu-detail text-xs text-gray-500">
+                                                    Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.
+                                                </h4>
+                                            </div>
+                                            <div className="col-span-1 menu-price-detail">
+                                                <h4 className="menu-price font-medium text-lg sm:text-2xl text-right"><span className="mx-2 text-xs">P.V.P</span>10,00 €</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>}
+
                         {activeTab === 3 && <div> </div>}
                     </div>
                 </div>
