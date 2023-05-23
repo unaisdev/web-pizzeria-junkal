@@ -20,16 +20,16 @@ const Carta = () => {
                 </div>
 
                 <div className="">
-                    <div className="mb-4 border-t border-gray-200 dark:border-gray-700">
+                    <div className="mb-4 border-t border-gray-200 ">
                         <ul className="flex flex-wrap justify-around -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                             <li className="mr-2" role="presentation">
-                                <button onClick={() => handleTabClick(1)} className={`${activeTab === 1 ? "bg-gray-300" : ""} inline-block px-4 py-2 border-b-2 border-transparent rounded-b-lg hover:text-gray-600 hover:border-gray-300`} id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Pizzas</button>
+                                <button onClick={() => handleTabClick(1)} className={`${activeTab === 1 ? "bg-gray-300 text-black" : "bg-gray-100 text-gray-500"} text-md md:text-xl uppercase inline-block px-4 py-2 border-b-2 border-transparent rounded-b-lg hover:bg-gray-200 `} id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Pizzas</button>
                             </li>
                             <li className="mr-2" role="presentation">
-                                <button onClick={() => handleTabClick(2)}  className={`${activeTab === 2 ? "bg-gray-300" : ""} inline-block px-4 py-2 border-b-2 border-transparent rounded-b-lg hover:text-gray-600 hover:border-gray-300`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Postres</button>
+                                <button onClick={() => handleTabClick(2)}  className={`${activeTab === 2 ? "bg-gray-300 text-black" : "bg-gray-100 text-gray-500"} text-md md:text-xl uppercase inline-block px-4 py-2 border-b-2 border-transparent rounded-b-lg hover:bg-gray-200`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Postres</button>
                             </li>
                             <li className="mr-2" role="presentation">
-                                <button onClick={() => handleTabClick(3)}  className={`${activeTab === 3 ? "bg-gray-300" : ""} inline-block px-4 py-2 border-b-2 border-transparent rounded-b-lg hover:text-gray-600 hover:border-gray-300`} id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Bebidas</button>
+                                <button onClick={() => handleTabClick(3)}  className={`${activeTab === 3 ? "bg-gray-300 text-black" : "bg-gray-100 text-gray-500"} text-md md:text-xl uppercase inline-block px-4 py-2 border-b-2 border-transparent rounded-b-lg hover:bg-gray-200`} id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Bebidas</button>
                             </li>
 
                         </ul>
