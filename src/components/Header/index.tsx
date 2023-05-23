@@ -95,7 +95,7 @@ const Header = () => {
         <>
             
             <header className={`${scrolled ? '-translate-y-6' : 'translate-y-0 '} fixed transition transform duration-300`} >
-                <div className={`flex justify-end items-center px-2 py-2 `}>
+                <div className={`flex justify-end items-center px-4 md:px-12 py-2 `}>
                     <div className="flex flex-col items-end">
                         
                         <a href="mailto:unaicanales@gmail.com" className={`${hideMail ? 'hidden': 'flex'} items-center`}>
