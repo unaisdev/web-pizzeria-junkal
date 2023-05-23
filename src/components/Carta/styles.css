@@ -13,6 +13,6 @@
 
 .carta-item {
   background-color: transparent !important;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 1)) !important;
+  background-image: linear-gradient(to top, rgba(100, 100, 100, 0), rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.7),  rgba(100, 100, 100, 0.9), rgba(100, 100, 100, 1)) !important;
 }
 
