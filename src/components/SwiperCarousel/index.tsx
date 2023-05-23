@@ -55,10 +55,10 @@ const SwiperCarousel = () => {
                 </video>
             </SwiperSlide>
             <SwiperSlide>
-                <img className='w-full h-full object-cover' alt='Pizza margarita de Pizzeria Junkal' src='https://images.unsplash.com/photo-1613564834361-9436948817d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=743&q=80' />
+                <img className='w-full h-full object-cover' alt='Pizza margarita de Pizzeria Junkal' src='/images/swiper/swiper1.webp' />
             </SwiperSlide>
             <SwiperSlide>
-                <img className='w-full h-full object-cover' alt='Pizza margarita de Pizzeria Junkal' src='https://images.unsplash.com/photo-1601924582970-9238bcb495d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80' />
+            <img className='w-full h-full object-cover' alt='Pizza margarita de Pizzeria Junkal' src='/images/swiper/swiper2.webp' />
             </SwiperSlide>
         </Swiper>
     );
