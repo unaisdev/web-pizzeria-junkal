@@ -11,14 +11,14 @@ import Presentacion from "../components/Presentacion";
 ---
 
 <Layout title="Pizzería Junkal - Irun">
-  <Header client:only="react" />
+  <Header client:idle />
 
   <main class="">
     <Presentacion />
-	  <Carta client:load />
-    <SwiperCarousel client:load/>
+	  <Carta client:idle />
+    <SwiperCarousel client:idle/>
 
-    <Colaboradores client:load/>
+    <Colaboradores client:idle/>
     <DondeEstamos />
   </main>
   <Footer />

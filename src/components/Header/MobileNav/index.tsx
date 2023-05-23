@@ -57,6 +57,8 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
         // @ts-ignore
         const y = anchor?.getBoundingClientRect().top + window.scrollY - offset;
         window.scrollTo({ top: y, behavior: "smooth" });
+        handleClose()
+
     }
 
     console.log(open)
