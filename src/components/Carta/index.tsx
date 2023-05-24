@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import './styles.css'
 import List, { Item } from "./List";
+import { motion } from "framer-motion";
+import Tabs from "./Tabs";
 
 const pizzas: Item[] = [
     {
@@ -103,13 +105,34 @@ const bebidas: Item[] = [
         price: "10,00 €",
     },
 ];
+interface TabProps {
+    title: string;
+    isActive: boolean;
+    onClick: () => void;
+}
+
+const Tab: React.FC<TabProps> = ({ title, isActive, onClick }) => {
+    return (
+        <motion.div
+            className={`tab ${isActive ? 'active' : ''}`}
+            onClick={onClick}
+            whileTap={{ scale: 0.95 }}
+        >
+            {title}
+        </motion.div>
+    );
+};
+
+
+
+
 
 const Carta = () => {
     const [showModal, setShowModal] = useState(false);
-    const [activeTab, setActiveTab] = useState(1);
+    const [activeTab, setActiveTab] = useState("Pizzas");
 
-    const handleTabClick = (tabIndex: number) => {
-        setActiveTab(tabIndex);
+    const handleTabClick = (category: string) => {
+        setActiveTab(category);
     };
 
     return (
@@ -122,10 +145,10 @@ const Carta = () => {
                         <h1 className="font-bold text-xl md:text-3xl">NUESTRA CARTA</h1>
                         <h2 className="text-gray-500 font-light text-md">GEURE MENUA</h2>
                     </div>
-                    <div className="">
+                    {/* <div className="">
                         <ul className="flex flex-wrap justify-around text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                             <li className="" role="presentation">
-                                <button onClick={() => handleTabClick(1)} className={`${activeTab === 1 ? "bg-gray-300 hover:bg-gray-300 text-black" : "bg-gray-100 text-gray-400 hover:bg-gray-200"} text-md md:text-xl uppercase px-4 py-2 rounded-t-lg  `} id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Pizzas</button>
+                                <button onClick={() => handleTabClick()} className={`${activeTab === 1 ? "bg-gray-300 hover:bg-gray-300 text-black" : "bg-gray-100 text-gray-400 hover:bg-gray-200"} text-md md:text-xl uppercase px-4 py-2 rounded-t-lg  `} id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Pizzas</button>
                             </li>
                             <li className="" role="presentation">
                                 <button onClick={() => handleTabClick(2)} className={`${activeTab === 2 ? "bg-gray-300 hover:bg-gray-300 text-black" : "bg-gray-100 text-gray-400 hover:bg-gray-200"} text-md md:text-xl uppercase inline-block px-4 py-2 rounded-t-lg`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Postres</button>
@@ -135,17 +158,25 @@ const Carta = () => {
                             </li>
 
                         </ul>
-                    </div>
-                </div>
+                    </div> */}
+                    <Tabs categories={["Pizzas", "Postres", "Bebidas"]} activeCategory={activeTab} onSelectCategory={handleTabClick} />
 
+                </div>
 
                 <div className="">
 
 
                     <div className="">
-                        {activeTab === 1 && <List items={pizzas} /> }
-                        {activeTab === 2 && <List items={postres} />}
-                        {activeTab === 3 && <List items={bebidas} />}
+                        <div className={`${activeTab !== "Pizzas" && 'hidden'}`}>
+                            <List items={pizzas} />
+                        </div>
+                        <div className={`${activeTab !== "Postres" && 'hidden'}`}>
+                            <List items={postres} />
+                        </div>
+                        <div className={`${activeTab !== "Bebidas" && 'hidden'}`}>
+                            <List items={bebidas} />
+                        </div>
+                        
                     </div>
                 </div>
 

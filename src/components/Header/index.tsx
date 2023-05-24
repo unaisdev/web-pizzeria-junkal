@@ -30,7 +30,7 @@ const Header = () => {
     const [headerOpacity, setHeaderOpacity] = useState(1);
     const [open, setOpen] = useState(false)
 
-    function handleClickCarta() {
+    const handleClickCarta = () => {
         const anchor = document.querySelector("#carta");
         const offset = 100; // Ajusta el valor del desplazamiento aquí
         // @ts-ignore
@@ -38,7 +38,7 @@ const Header = () => {
         window.scrollTo({ top: y, behavior: "smooth" });
     }
 
-    function handleClickInfo() {
+    const handleClickInfo = () => {
         const anchor = document.querySelector("#info");
         const offset = 100; // Ajusta el valor del desplazamiento aquí
         // @ts-ignore
@@ -46,7 +46,7 @@ const Header = () => {
         window.scrollTo({ top: y, behavior: "smooth" });
     }
 
-    function handleClickInicio() {
+    const handleClickInicio = () => {
         const anchor = document.querySelector("body");
         const offset = 80; // Ajusta el valor del desplazamiento aquí
         // @ts-ignore
@@ -54,7 +54,7 @@ const Header = () => {
         window.scrollTo({ top: y, behavior: "smooth" });
     }
 
-    function handleClickColaboradores() {
+    const handleClickColaboradores = () => {
         const anchor = document.querySelector("#colaboradores");
         const offset = 110; // Ajusta el valor del desplazamiento aquí
         // @ts-ignore
@@ -66,28 +66,17 @@ const Header = () => {
         setOpen(false)
     }
 
-
-
     useEffect(() => {
         let scrollingTimeout: number = 0;
 
         const handleScroll = () => {
             setScrolled((window.scrollY > 0))
-            // setHideMail((window.scrollY > 20));
-
-            // clearTimeout(scrollingTimeout);
-
-            // // Establece scrolled en false después de 300ms de inactividad de scroll
-            // scrollingTimeout = setTimeout(() => {
-            //     setScrolled(false);
-            // }, 1200);
         };
 
         window.addEventListener("scroll", handleScroll);
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
-
         };
     }, []);
 
