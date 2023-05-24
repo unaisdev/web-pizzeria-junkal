@@ -94,8 +94,8 @@ const Header = () => {
     return (
         <>
 
-            <header className="fixed" >
-                <div className={`${scrolled ? '-translate-y-10 md:-translate-y-12' : 'translate-y-0 '} transition transform duration-300`}>
+            <header className={`${scrolled ? '-translate-y-10 md:-translate-y-12' : 'translate-y-0 '} transition transform duration-300 fixed `} >
+                <div className={``}>
                     <div className={`flex justify-end items-center px-4 md:px-12 py-2 `}>
                         <div className="flex flex-col items-end">
 

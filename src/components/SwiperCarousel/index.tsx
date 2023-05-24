@@ -10,7 +10,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import ListSection from '../List';
+import ListSection from '../Carta/List';
 
 const SwiperCarousel = () => {
     return (
@@ -41,7 +41,7 @@ const SwiperCarousel = () => {
                         <div className='swiper-box h-full absolute bottom-0 w-full text-center flex items-center justify-center bg-opacity-20'>
                             <div className='w-auto pt-10'>
                                 <h2 className='font-semibold text-3xl text-white px-8'>El secreto de la elaboración</h2>
-                                <p className='text-xs md:text-sm text-white mt-2 px-8'>Nuestra masa, con harinas de Km0 y procesos de larga fermentación, consigue que el producto sea digestivo...</p>
+                                <p className='text-xs md:text-sm text-white mt-2 px-8'>Nuestra masa, con harinas ecológicas y procesos de larga fermentación, consigue que el producto sea digestivo...</p>
                             </div>
 
                         </div>

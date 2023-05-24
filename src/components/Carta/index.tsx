@@ -1,11 +1,39 @@
 import { useState } from "react";
 
 import './styles.css'
-import List, { Item } from "../List";
+import List, { Item } from "./List";
 
 const pizzas: Item[] = [
     {
         name: "Margarita",
+        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+        image_path: "/images/carta/baserri.webp",
+        price: "10,00 €",
+    },
+    {
+        name: "Cuatro Quesos",
+        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+        image_path: "/images/carta/baserri.webp",
+        price: "10,00 €",
+    },
+    {
+        name: "Baserri",
+        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+        image_path: "/images/carta/baserri.webp",
+        price: "10,00 €",
+    },
+    {
+        name: "Cuatro Quesos",
+        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+        image_path: "/images/carta/baserri.webp",
+        price: "10,00 €",
+    },
+    {
+        name: "Baserri",
         desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
         desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
         image_path: "/images/carta/baserri.webp",

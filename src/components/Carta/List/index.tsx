@@ -51,7 +51,7 @@ const List = ({ items }: Props) => {
           }`}
           initial={{ opacity: 0, scale: 0.6 }}
           animate={controls}
-          transition={{ duration: 0.5, delay: index * 0.5 }}
+          transition={{ duration: 0.5, delay: index * 0.3 }}
           onClick={() => handleClick(index)}
         >
           <img

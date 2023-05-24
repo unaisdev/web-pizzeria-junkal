@@ -1,4 +1,4 @@
-import ListSection from "../List";
+import ListSection from "../Carta/List";
 import "./styles.css";
 
 const DondeEstamos = () => {
