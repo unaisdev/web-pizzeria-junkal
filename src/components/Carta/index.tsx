@@ -10,6 +10,7 @@ const pizzas: Item[] = [
         desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
         image_path: "/images/carta/baserri.webp",
         price: "10,00 €",
+        recommended: true,
     },
     {
         name: "Cuatro Quesos",
