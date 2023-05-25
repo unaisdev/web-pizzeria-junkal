@@ -17,7 +17,7 @@ interface TabProps {
 const Tab: React.FC<TabProps> = ({ title, isActive, onClick }) => {
     return (
         <motion.div
-            className={`tab ${isActive ? 'active border-b-2 border-b-gray-300 bg-gray-200 ' : 'bg-gray-100 text-gray-400 hover:bg-gray-200'} py-4  md:hover:bg-gray-200`}
+            className={`cursor-pointer tab ${isActive ? 'active border-b-2 border-b-gray-300 bg-gray-200 ' : 'bg-gray-100 text-gray-400 hover:bg-gray-200'} py-4  md:hover:bg-gray-200`}
             onClick={onClick}
             
         >

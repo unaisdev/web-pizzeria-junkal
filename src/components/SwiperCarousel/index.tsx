@@ -2,7 +2,7 @@
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade, EffectCube, EffectFlip, EffectCards, EffectCoverflow, EffectCreative, SwiperOptions } from 'swiper';
+import { EffectFade } from 'swiper';
 
 import './styles.css'
 // Import Swiper styles
@@ -25,6 +25,7 @@ const SwiperCarousel = () => {
                 loop
                 navigation
                 freeMode
+
                 autoplay={{
                     delay: 0,
                     waitForTransition: true,
@@ -61,7 +62,7 @@ const SwiperCarousel = () => {
                 <SwiperSlide>
                     <img className='w-full h-full object-cover' alt='Pizza margarita de Pizzeria Junkal' src='/images/swiper/swiper2.webp' />
                 </SwiperSlide>
-            </Swiper>
+            </Swiper >
         </>
 
     );
