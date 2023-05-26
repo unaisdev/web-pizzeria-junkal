@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface TabsProps {
     categories: string[];
@@ -19,7 +19,7 @@ const Tab: React.FC<TabProps> = ({ title, isActive, onClick }) => {
         <motion.div
             className={`cursor-pointer tab ${isActive ? 'active border-b-2 border-b-gray-300 bg-gray-200 ' : 'bg-gray-100 text-gray-400 hover:bg-gray-200'} py-4  md:hover:bg-gray-200`}
             onClick={onClick}
-            
+
         >
             <motion.p className={`${isActive ? 'font-semibold' : ''} uppercase`}>{title}</motion.p>
         </motion.div>
@@ -29,11 +29,14 @@ const Tab: React.FC<TabProps> = ({ title, isActive, onClick }) => {
 
 const Tabs: React.FC<TabsProps> = ({ categories, activeCategory, onSelectCategory }) => {
     const sectionRef = useRef<HTMLDivElement>(null);
+    const header = document.querySelector('header')
+    const [tabsTopPx, setTabsTopPx] = useState(10)
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const [entry] = entries;
-            if (entry.target ) {
+            if (entry.isIntersecting) {
+                console.log("observer")
             }
         });
 
@@ -47,6 +50,12 @@ const Tabs: React.FC<TabsProps> = ({ categories, activeCategory, onSelectCategor
             }
         };
     }, []);
+
+
+    useEffect(() => {
+
+    }, [])
+
 
     return (
         <div ref={sectionRef} className="tabs grid grid-cols-3 text-center border-b border-t">
