@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ColaboradorCard from './ColaboradorCard';
@@ -47,7 +45,7 @@ const Colaboradores = () => {
                 <h1 className="font-bold text-xl md:text-3xl">CONOCE EL PRODUCTO</h1>
                 <p className="text-gray-500 font-light text-md">PRODUCTUA EZAGUTU</p>
             </div>
-            <div className={`grid grid-cols-${Math.floor(items.length/2)} md:grid-cols-${items.length} bg-gray-100 px-2 py-4 md:px-6 md:py-10 gap-y-2 gap-x-2`}>
+            <div className={`grid grid-cols-2 md:grid-cols-4 bg-gray-100 px-2 py-4 md:px-6 md:py-10 gap-y-2 gap-x-2`}>
                 {items.map((item, index) => (
                     <motion.div
                         key={index}
