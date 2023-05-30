@@ -61,7 +61,7 @@ const Colaboradores = () => {
                         key={index}
                         className=""
                         initial={{ opacity: 0 }}
-                        animate={{ opacity: index === currentIndex ? 1 : 0.2 }}
+                        animate={{ opacity: index === currentIndex ? 1 : 0.4 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.5 }}
                     >
