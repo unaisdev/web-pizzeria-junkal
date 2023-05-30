@@ -55,7 +55,7 @@ const Colaboradores = () => {
                 <h1 className="font-bold text-xl md:text-3xl">PRODUCTO</h1>
                 <p className="text-gray-500 font-light text-md">HARREMANAK</p>
             </div>
-            <div className="flex flex-wrap items-center bg-slate-300 p-4 justify-around">
+            <div className="flex flex-wrap items-center bg-slate-300 p-6 justify-around">
                 {items.map((item, index) => (
                     <motion.div
                         key={index}

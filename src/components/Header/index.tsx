@@ -84,7 +84,7 @@ const Header = () => {
     return (
         <>
 
-            <header className={`${scrolled ? '-translate-y-14' : 'translate-y-0 '} transition transform duration-300 fixed `} >
+            <header className={`${scrolled ? '-translate-y-12' : 'translate-y-0 '} transition transform duration-300 fixed `} >
                 <div className={`${presentationPassed ? 'bg-black' : 'degradado'} transition transform duration-600`}>
                     <div className={`flex justify-end items-center px-4 md:px-12 py-2 `}>
                         <div className="flex flex-col items-end">
@@ -112,7 +112,7 @@ const Header = () => {
                         </div>
 
                     </div>
-                    <div className={`flex transition duration-300 justify-between items-center px-4 md:px-12 py-4 md:pb-8 `}>
+                    <div className={`flex transition duration-300 justify-between items-center px-4 md:px-12 py-4  ${presentationPassed ? '' : 'md:pb-8'} `}>
                         <div>
                             <div className="flex items-center cursor-pointer" onClick={handleClickInicio}>
                                 <img
