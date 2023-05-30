@@ -80,6 +80,11 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
                         className={`fixed flex justify-between bg-opacity-100 right-0 top-0 w-[180px] h-screen bg-white pt-12 p-8 z-50 py-24`}
                     >
                         <div className="flex flex-col flex-grow justify-between">
+                            <div className="">
+                                <div className="">
+                                    
+                                </div>
+                            </div>
                             <ul className="flex flex-col space-y-3 mb-6">
                                 <motion.li
                                     variants={variants}
@@ -126,6 +131,7 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
                                     </p>
                                 </motion.li>
                             </ul>
+
                             <div className="">
                                 <SocialMediaButtons />
                             </div>

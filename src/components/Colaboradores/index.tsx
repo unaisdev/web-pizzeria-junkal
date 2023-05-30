@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ColaboradorCard from './ColaboradorCard';
@@ -22,17 +24,7 @@ const items = [
         name: 'Carnes',
         image_path: '/images/colaboradores/sello-ccpae.webp',
         desc: ' Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet \n Lorem ipsum dolor sit amet'
-    },
-    {
-        name: 'Carnes',
-        image_path: '/images/colaboradores/sello-km0.webp',
-        desc: ' Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet \n Lorem ipsum dolor sit amet'
-    },
-    {
-        name: 'Carnes',
-        image_path: '/images/colaboradores/sello-km0.webp',
-        desc: ' Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet \n Lorem ipsum dolor sit amet'
-    },
+    }
 
 ];
 
@@ -55,11 +47,11 @@ const Colaboradores = () => {
                 <h1 className="font-bold text-xl md:text-3xl">CONOCE EL PRODUCTO</h1>
                 <p className="text-gray-500 font-light text-md">PRODUCTUA EZAGUTU</p>
             </div>
-            <div className="flex flex-wrap items-center bg-gray-100 p-6 justify-around">
+            <div className={`grid grid-cols-${Math.floor(items.length/2)} md:grid-cols-${items.length} bg-gray-100 px-2 py-4 md:px-6 md:py-10 gap-y-2 gap-x-2`}>
                 {items.map((item, index) => (
                     <motion.div
                         key={index}
-                        className=""
+                        className="flex justify-center items-center"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: index === currentIndex ? 1 : 0.4 }}
                         exit={{ opacity: 0 }}
@@ -69,6 +61,7 @@ const Colaboradores = () => {
                     </motion.div>
                 ))}
             </div>
+
         </section>
     );
 };

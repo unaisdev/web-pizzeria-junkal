@@ -14,9 +14,28 @@ interface TabProps {
     onClick: () => void;
 }
 
+const variants = {
+    open: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            y: { stiffness: 1000, velocity: -300 }
+        }
+    },
+    closed: {
+        y: 50,
+        opacity: 0,
+        transition: {
+            y: { stiffness: 1000 }
+        }
+    }
+};
+
 const Tab: React.FC<TabProps> = ({ title, isActive, onClick }) => {
     return (
         <motion.div
+            variants={variants}
+            whileTap={{ scale: 0.9 }}
             className={`cursor-pointer tab ${isActive ? 'active border-b-2 border-b-gray-300 bg-gray-200 ' : 'bg-gray-100 text-gray-400 hover:bg-gray-200'} py-4  md:hover:bg-gray-200`}
             onClick={onClick}
 

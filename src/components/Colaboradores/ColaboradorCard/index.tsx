@@ -24,7 +24,7 @@ const ColaboradorCard = ({ item, index, currentIndex }: Props) => {
         <motion.img
             src={item.image_path}
             
-            className="relative flex object-contain justify-center aspect-[4/3] items-center h-24 w-24 md:w-52 md:h-52"
+            className="relative flex object-contain justify-center items-center h-24 w-24 md:w-52 md:h-52"
             initial={{ scale: 0.8 }}
             animate={{ scale: isExpanded ? 1 : 0.8 }}
             transition={{ duration: 0.5 }}
