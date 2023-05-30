@@ -26,6 +26,7 @@ const variants = {
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [presentationPassed, setPresPass] = useState(false);
     const [open, setOpen] = useState(false)
 
     const handleClickCarta = () => {
@@ -69,6 +70,7 @@ const Header = () => {
 
         const handleScroll = () => {
             setScrolled((window.scrollY > 0))
+            setPresPass((window.scrollY > 350))
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -78,11 +80,12 @@ const Header = () => {
         };
     }, []);
 
+    console.log(presentationPassed)
     return (
         <>
 
-            <header className={`${scrolled ? '-translate-y-10 md:-translate-y-12' : 'translate-y-0 '} transition transform duration-300 fixed `} >
-                <div className={`${scrolled ? 'degradado' : ''}`}>
+            <header className={`${scrolled ? '-translate-y-14' : 'translate-y-0 '} transition transform duration-300 fixed `} >
+                <div className={`${presentationPassed ? 'bg-black' : 'degradado'} transition transform duration-600`}>
                     <div className={`flex justify-end items-center px-4 md:px-12 py-2 `}>
                         <div className="flex flex-col items-end">
 
@@ -109,7 +112,7 @@ const Header = () => {
                         </div>
 
                     </div>
-                    <div className={`flex transition duration-300 justify-between items-center px-4 md:px-12 py-2 md:py-4 pb-4 md:pb-8 `}>
+                    <div className={`flex transition duration-300 justify-between items-center px-4 md:px-12 py-4 md:pb-8 `}>
                         <div>
                             <div className="flex items-center cursor-pointer" onClick={handleClickInicio}>
                                 <img
@@ -207,10 +210,12 @@ const Header = () => {
                 </div>
 
             </header >
-            <a href="tel:943265863" className={`${scrolled ? 'translate-x-0' : 'translate-x-24'} border border-green-200 md:hidden flex items-center justify-center fixed bottom-12 right-8 w-12 h-12 rounded-full bg-green-500 z-50 shadow-md shadow-gray-600 transition transform duration-300 active:bg-green-700 active:shadow-sm active:shadow-gray-400`}>
+            <div className={`${scrolled ? 'translate-x-0' : 'translate-x-28'}  transition transform duration-300 fixed bottom-12 right-8 z-50`}>
+                <a href="tel:943265863" className={`border animate-bounce  border-green-200 flex items-center justify-center  w-14 h-14 md:w-16 md:h-16 rounded-full bg-green-500 z-50 shadow-md shadow-gray-600 active:bg-green-700 active:shadow-sm active:shadow-gray-400`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 fill-black" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none" /><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" /></svg>
+                </a>
+            </div>
 
-                <svg xmlns="http://www.w3.org/2000/svg"  className="w-6 h-6 fill-green-900" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none" /><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" /></svg>
-            </a>
             <MobileNav open={open} handleClose={handleCloseClick} />
         </>
     )

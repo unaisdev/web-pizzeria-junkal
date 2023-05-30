@@ -4,14 +4,14 @@
 }
 
 .presentation-img {
-  height: 800px;
+  height: 550px;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
 
     .presentation-img {
         height: 450px;
       }
       
 
-}
+} */
