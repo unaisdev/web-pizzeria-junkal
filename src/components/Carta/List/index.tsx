@@ -47,7 +47,7 @@ const List = ({ items }: Props) => {
       {items.map((item, index) => (
         <motion.div
           key={index}
-          className={`relative item-carta flex h-auto my-2 mx-4 items-center justify-around bg-slate-200 shadow-md shadow-gray-300`}
+          className={`relative item-carta flex h-auto my-2 mx-4 items-center justify-around bg-gray-100 shadow-md shadow-gray-300`}
           initial={{ opacity: 0, scale: 0.6 }}
           animate={controls}
           transition={{ duration: 0.5, delay: index * 0.3 }}
