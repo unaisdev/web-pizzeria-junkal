@@ -34,13 +34,13 @@ const variants = {
 const Tab: React.FC<TabProps> = ({ title, isActive, onClick }) => {
     return (
         <motion.div
-            variants={variants}
-            whileTap={{ scale: 0.9 }}
             className={`cursor-pointer tab ${isActive ? 'active border-b-2 border-b-gray-300 bg-gray-200 ' : 'bg-gray-100 text-gray-400 hover:bg-gray-200'} py-4  md:hover:bg-gray-200`}
             onClick={onClick}
-
         >
-            <motion.p className={`${isActive ? 'font-semibold' : ''} uppercase`}>{title}</motion.p>
+            <motion.p
+                whileTap={{ scale: 0.8 }}
+                className={`${isActive ? 'font-semibold' : ''} uppercase`}
+            >{title}</motion.p>
         </motion.div>
     );
 };
