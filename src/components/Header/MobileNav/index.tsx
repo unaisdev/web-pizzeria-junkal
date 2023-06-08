@@ -1,10 +1,11 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import { motion } from "framer-motion";
-import SocialMediaButtons from "../../general/SocialMediaButtons";
+import RedesSociales from "../../general/RedesSociales";
 
 interface HeaderProps {
     open: boolean;
     handleClose: () => void;
+    
 }
 
 const variants = {
@@ -82,7 +83,13 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
                         <div className="flex flex-col flex-grow justify-between">
                             <div className="">
                                 <div className="">
-                                    
+                                    <p className="text-xs"><span className="font-semibold">L:</span> Cerrado</p>
+                                    <p className="text-xs"><span className="font-semibold">M:</span> Cerrado</p>
+                                    <p className="text-xs"><span className="font-semibold">X:</span> 19:00 - 22:30h</p>
+                                    <p className="text-xs"><span className="font-semibold">J:</span> 19:00 - 22:00h</p>
+                                    <p className="text-xs"><span className="font-semibold">V:</span> 19:00 - 23:00h</p>
+                                    <p className="text-xs"><span className="font-semibold">S:</span> 19:00 - 23:00h</p>
+                                    <p className="text-xs"><span className="font-semibold">D:</span> 19:00 - 22:00h</p>
                                 </div>
                             </div>
                             <ul className="flex flex-col space-y-3 mb-6">
@@ -116,7 +123,7 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
                                         onClick={handleClickColaboradores}
                                         className="cursor-pointer "
                                     >
-                                        Colaboradores
+                                        El producto
                                     </p>
                                 </motion.li>
                                 <motion.li
@@ -133,7 +140,7 @@ const MobileNav = ({ open, handleClose }: HeaderProps) => {
                             </ul>
 
                             <div className="">
-                                <SocialMediaButtons />
+                                <RedesSociales iconClassName={"fill-black w-8 h-8 md:w-10 md:h-10"} hideText={true}/>
                             </div>
                         </div>
                     </div>
