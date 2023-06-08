@@ -73,7 +73,7 @@ const Header = () => {
     return (
         <>
 
-            <header className={`${scrolled ? '-translate-y-12' : 'translate-y-0 '} ${presentationPassed ? '-translate-y-14' : '-translate-y-12 '} transition transform duration-300 fixed `} >
+            <header className={`${scrolled ? '-translate-y-12' : 'translate-y-0 '} ${presentationPassed ? 'md:-translate-y-14' : 'md:-translate-y-12 '} transition transform duration-300 fixed `} >
                 <div className={`${presentationPassed ? 'bg-black' : 'degradado'} transition transform duration-600`}>
                     <div className={`flex justify-end items-center px-4 md:px-12 py-2 `}>
                         <div className="flex flex-col items-end">

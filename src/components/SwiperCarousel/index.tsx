@@ -26,10 +26,9 @@ const SwiperCarousel = () => {
                 navigation
                 freeMode
                 autoplay={{
-                    delay: 0,
+                    delay: 2500,
                     waitForTransition: true,
                     disableOnInteraction: false,
-                    reverseDirection: true
                 }}
                 pagination={{ clickable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
