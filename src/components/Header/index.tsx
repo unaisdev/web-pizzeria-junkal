@@ -29,6 +29,34 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [presentationPassed, setPresPass] = useState(false);
   const [open, setOpen] = useState(false);
+  const [bounceCount, setBounceCount] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBounceCount((count) => count + 1);
+    }, 500); // Cambia el valor 500 a la duración deseada entre rebotes
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (bounceCount >= 4) {
+      setTimeout(() => {
+        setBounceCount(0);
+      }, 2000); // Cambia el valor 2000 a la duración deseada de pausa después de los 4 rebotes
+    }
+  }, [bounceCount]);
+
+  const getTransformY = () => {
+    if (bounceCount < 4) {
+      // Calcular la posición de rebote basada en el número de rebotes completados
+      const offset = 25;
+      return `${offset}%`;
+    }
+    return "0";
+  };
 
   const scrollToSection = (sectionId: string, offset?: number) => {
     const anchor = document.querySelector(sectionId);
@@ -299,7 +327,11 @@ const Header = () => {
               +34 <b className="text-lg ml-2">943 26 58 63</b>
             </p>
           )}
-          className={`border animate-bounce  transition duration-300  border-green-200 flex items-center justify-center  w-14 h-14 md:w-16 md:h-16 rounded-full bg-green-500 z-50 shadow-md shadow-gray-600 active:bg-green-700 active:shadow-sm active:shadow-gray-400`}
+          style={{
+            transform: `translateY(${getTransformY()})`,
+            transition: "transform 0.5s",
+          }}
+          className={`border transition duration-300 border-green-200 flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-green-500 z-50 shadow-md shadow-gray-600 active:bg-green-700 active:shadow-sm active:shadow-gray-400`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
