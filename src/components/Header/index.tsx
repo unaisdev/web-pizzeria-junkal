@@ -5,6 +5,8 @@ import "./styles.css";
 import MobileNav from "./MobileNav";
 import { motion } from "framer-motion";
 import { debounce } from "../../../helpers";
+import { Tooltip } from "react-tooltip";
+import ReactDOMServer from "react-dom/server";
 
 const variants = {
   open: {
@@ -291,7 +293,13 @@ const Header = () => {
       >
         <a
           href="tel:943265863"
-          className={`border animate-bounce  border-green-200 flex items-center justify-center  w-14 h-14 md:w-16 md:h-16 rounded-full bg-green-500 z-50 shadow-md shadow-gray-600 active:bg-green-700 active:shadow-sm active:shadow-gray-400`}
+          data-tooltip-id="my-tooltip"
+          data-tooltip-html={ReactDOMServer.renderToStaticMarkup(
+            <p className="flex flex-row items-center justify-center">
+              +34 <b className="text-lg ml-2">943 26 58 63</b>
+            </p>
+          )}
+          className={`border animate-bounce  transition duration-300  border-green-200 flex items-center justify-center  w-14 h-14 md:w-16 md:h-16 rounded-full bg-green-500 z-50 shadow-md shadow-gray-600 active:bg-green-700 active:shadow-sm active:shadow-gray-400`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -304,6 +312,7 @@ const Header = () => {
             <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
           </svg>
         </a>
+        <Tooltip id="my-tooltip" />
       </div>
 
       <MobileNav open={open} handleClose={handleCloseClick} />

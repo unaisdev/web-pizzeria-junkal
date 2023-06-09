@@ -1,8 +1,8 @@
 const MasInformacion = () => {
   return (
     <section id="servicios" className="pt-6 md:py-6">
-      <div className="flex flex-col md:flex-row justify-around items-center gap-6 md:gap-12">
-        <div className="flex flex-col w-full xl:w-3/6 px-4">
+      <div className="flex flex-col md:flex-row justify-around items-center gap-12 px-4 md:px-12">
+        <div className="flex flex-col w-full">
           <p className="text-lg md:text-xl text-right text-red-600 border-b-gray-200 border-b">
             <span className="font-semibold text-xl text-black md:text-2xl mr-4 float-left">
               Lunes y Martes
@@ -29,7 +29,7 @@ const MasInformacion = () => {
           </p>
         </div>
 
-        <div className="flex flex-row justify-around gap-6 items-top">
+        <div className="flex flex-row justify-around gap-6 items-top md:w-2/6">
           <div className="flex flex-col items-center justify-start w-44">
             <svg
               xmlns="http://www.w3.org/2000/svg"
