@@ -65,10 +65,10 @@ const List = ({ items }: Props) => {
             <div className="flex flex-col flex-grow justify-between h-full p-2 sm:py-4 sm:pr-8">
               <div className="flex flex-col justify-around">
                 {item.recommended && (
-                  <div className="absolute -top-1 -right-2 flex justify-end bg-orange-500 p-1.5 shadow-md shadow-gray-400 rounded-full">
+                  <div className="absolute -top-1 -right-2 flex justify-end bg-orange-500 p-1 md:p-1.5 shadow-md shadow-gray-400 rounded-full">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-5 h-5 stroke-white fill-orange-500"
+                      className="w-4 h-4 md:w-5 md:h-5 stroke-white fill-orange-500"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"

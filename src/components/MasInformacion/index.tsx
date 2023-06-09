@@ -3,26 +3,26 @@ const MasInformacion = () => {
     <section id="servicios" className="pt-6 md:py-6">
       <div className="flex flex-col md:flex-row justify-around items-center gap-12 px-4 md:px-12">
         <div className="flex flex-col w-full">
-          <p className="text-lg md:text-xl text-right text-red-600 border-b-gray-200 border-b">
-            <span className="font-semibold text-xl text-black md:text-2xl mr-4 float-left">
+          <p className="text-md md:text-xl text-right text-red-600 border-b-gray-200 border-b">
+            <span className="font-semibold text-lg text-black md:text-2xl mr-4 float-left">
               Lunes y Martes
             </span>
             Cerrado
           </p>
-          <p className="text-lg md:text-xl text-right border-b-gray-200 border-b">
-            <span className="font-semibold text-xl md:text-2xl float-left mr-4">
-              Miercoles y Jueves
+          <p className="text-md md:text-xl text-right border-b-gray-200 border-b">
+            <span className="font-semibold text-lg md:text-2xl float-left mr-4">
+              Miércoles y Jueves
             </span>
             19:00h - 22:30h
           </p>
-          <p className="text-lg md:text-xl text-right border-b-gray-200 border-b">
-            <span className="font-semibold text-xl md:text-2xl float-left  mr-4">
+          <p className="text-md md:text-xl text-right border-b-gray-200 border-b">
+            <span className="font-semibold text-lg md:text-2xl float-left  mr-4">
               Viernes y Sábado
             </span>
             19:00h - 23:00h
           </p>
-          <p className="text-lg md:text-xl text-right border-b-gray-200 border-b">
-            <span className="font-semibold text-xl md:text-2xl float-left  mr-4">
+          <p className="text-md md:text-xl text-right border-b-gray-200 border-b">
+            <span className="font-semibold text-lg md:text-2xl float-left  mr-4">
               Domingo
             </span>{" "}
             19:00h - 22:00h

@@ -137,7 +137,7 @@ const Carta = () => {
   };
 
   return (
-    <section id="carta" className="pb-6">
+    <section id="carta" className="md:pb-6">
       <div className="flex flex-col ">
         <div className="bg-gray-100">
           <div className="py-6 pl-4  md:pl-12">
