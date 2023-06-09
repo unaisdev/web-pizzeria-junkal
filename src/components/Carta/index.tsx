@@ -1,151 +1,150 @@
 import { useState } from "react";
 
-import './styles.css'
+import "./styles.css";
 import List, { Item } from "./List";
 import { motion } from "framer-motion";
 import Tabs from "./Tabs";
 
 const pizzas: Item[] = [
-    {
-        name: "Margarita",
-        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
-        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
-        image_path: "/images/carta/baserri.webp",
-        price: "10,00 €",
-        recommended: true,
-    },
-    {
-        name: "Cuatro Quesos",
-        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
-        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
-        image_path: "/images/carta/baserri.webp",
-        price: "10,00 €",
-    },
-    {
-        name: "Baserri",
-        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
-        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
-        image_path: "/images/carta/baserri.webp",
-        price: "10,00 €",
-    },
-    {
-        name: "Cuatro Quesos",
-        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
-        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
-        image_path: "/images/carta/baserri.webp",
-        price: "10,00 €",
-    },
-    {
-        name: "Baserri",
-        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
-        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
-        image_path: "/images/carta/baserri.webp",
-        price: "10,00 €",
-    },
-    {
-        name: "Cuatro Quesos",
-        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
-        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
-        image_path: "/images/carta/baserri.webp",
-        price: "10,00 €",
-    },
-    {
-        name: "Baserri",
-        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
-        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
-        image_path: "/images/carta/baserri.webp",
-        price: "10,00 €",
-    },
+  {
+    name: "Margarita",
+    desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+    desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+    image_path: "/images/carta/baserri.webp",
+    price: "10,00 €",
+    recommended: true,
+  },
+  {
+    name: "Cuatro Quesos",
+    desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+    desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+    image_path: "/images/carta/baserri.webp",
+    price: "10,00 €",
+    recommended: true,
+  },
+  {
+    name: "Baserri",
+    desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+    desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+    image_path: "/images/carta/baserri.webp",
+    price: "10,00 €",
+  },
+  {
+    name: "Cuatro Quesos",
+    desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+    desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+    image_path: "/images/carta/baserri.webp",
+    price: "10,00 €",
+  },
+  {
+    name: "Baserri",
+    desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+    desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+    image_path: "/images/carta/baserri.webp",
+    price: "10,00 €",
+  },
+  {
+    name: "Cuatro Quesos",
+    desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+    desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+    image_path: "/images/carta/baserri.webp",
+    price: "10,00 €",
+    recommended: true,
+  },
+  {
+    name: "Baserri",
+    desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+    desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+    image_path: "/images/carta/baserri.webp",
+    price: "10,00 €",
+  },
 ];
 
 const postres: Item[] = [
-    {
-        name: "Margarita",
-        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
-        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
-        image_path: "/images/carta/baserri.webp",
-        price: "10,00 €",
-    },
-    {
-        name: "Cuatro Quesos",
-        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
-        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
-        image_path: "/images/carta/baserri.webp",
-        price: "10,00 €",
-    },
-    {
-        name: "Baserri",
-        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
-        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
-        image_path: "/images/carta/baserri.webp",
-        price: "10,00 €",
-    },
+  {
+    name: "Margarita",
+    desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+    desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+    image_path: "/images/carta/baserri.webp",
+    price: "10,00 €",
+  },
+  {
+    name: "Cuatro Quesos",
+    desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+    desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+    image_path: "/images/carta/baserri.webp",
+    price: "10,00 €",
+    recommended: true,
+  },
+  {
+    name: "Baserri",
+    desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+    desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+    image_path: "/images/carta/baserri.webp",
+    price: "10,00 €",
+  },
 ];
 
 const bebidas: Item[] = [
-    {
-        name: "Margarita",
-        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
-        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
-        image_path: "/images/carta/baserri.webp",
-        price: "10,00 €",
-    },
-    {
-        name: "Cuatro Quesos",
-        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
-        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
-        image_path: "/images/carta/baserri.webp",
-        price: "10,00 €",
-    },
-    {
-        name: "Baserri",
-        desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
-        desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
-        image_path: "/images/carta/baserri.webp",
-        price: "10,00 €",
-    },
+  {
+    name: "Margarita",
+    desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+    desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+    image_path: "/images/carta/baserri.webp",
+    price: "10,00 €",
+    recommended: true,
+  },
+  {
+    name: "Cuatro Quesos",
+    desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+    desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+    image_path: "/images/carta/baserri.webp",
+    price: "10,00 €",
+  },
+  {
+    name: "Baserri",
+    desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+    desc_eus: "Tomatea, mozzarella, parmigiano gazta, oliba olio eta albahaca.",
+    image_path: "/images/carta/baserri.webp",
+    price: "10,00 €",
+    recommended: true,
+  },
 ];
 interface TabProps {
-    title: string;
-    isActive: boolean;
-    onClick: () => void;
+  title: string;
+  isActive: boolean;
+  onClick: () => void;
 }
 
 const Tab: React.FC<TabProps> = ({ title, isActive, onClick }) => {
-    return (
-        <motion.div
-            className={`tab ${isActive ? 'active' : ''}`}
-            onClick={onClick}
-            whileTap={{ scale: 0.95 }}
-        >
-            {title}
-        </motion.div>
-    );
+  return (
+    <motion.div
+      className={`tab ${isActive ? "active" : ""}`}
+      onClick={onClick}
+      whileTap={{ scale: 0.95 }}
+    >
+      {title}
+    </motion.div>
+  );
 };
 
-
-
-
-
 const Carta = () => {
-    const [showModal, setShowModal] = useState(false);
-    const [activeTab, setActiveTab] = useState("Pizzas");
+  const [showModal, setShowModal] = useState(false);
+  const [activeTab, setActiveTab] = useState("Pizzas");
 
-    const handleTabClick = (category: string) => {
-        setActiveTab(category);
-    };
+  const handleTabClick = (category: string) => {
+    setActiveTab(category);
+  };
 
-    return (
-        <section id="carta" className="pb-6">
-
-            <div className="flex flex-col ">
-                <div className="bg-gray-100">
-                    <div className="py-6 pl-4  md:pl-12">
-
-                        <h1 className="font-bold text-xl md:text-3xl">NUESTRA CARTA</h1>
-                        <h2 className="text-gray-500 font-light text-md">GEURE MENUA</h2>
-                    </div>
-                    {/* <div className="">
+  return (
+    <section id="carta" className="pb-6">
+      <div className="flex flex-col ">
+        <div className="bg-gray-100">
+          <div className="py-6 pl-4  md:pl-12">
+            <h1 className="font-bold text-xl md:text-3xl">NUESTRA CARTA</h1>
+            <h2 className="text-gray-500 font-light text-md">GEURE MENUA</h2>
+          </div>
+          {/* <div className="">
                         <ul className="flex flex-wrap justify-around text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                             <li className="" role="presentation">
                                 <button onClick={() => handleTabClick()} className={`${activeTab === 1 ? "bg-gray-300 hover:bg-gray-300 text-black" : "bg-gray-100 text-gray-400 hover:bg-gray-200"} text-md md:text-xl uppercase px-4 py-2 rounded-t-lg  `} id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Pizzas</button>
@@ -159,33 +158,29 @@ const Carta = () => {
 
                         </ul>
                     </div> */}
-                    <Tabs categories={["Pizzas", "Postres", "Bebidas"]} activeCategory={activeTab} onSelectCategory={handleTabClick} />
+          <Tabs
+            categories={["Pizzas", "Postres", "Bebidas"]}
+            activeCategory={activeTab}
+            onSelectCategory={handleTabClick}
+          />
+        </div>
 
-                </div>
-
-                <div className="">
-
-
-                    <div className="">
-                        <div className={`${activeTab !== "Pizzas" && 'hidden'}`}>
-                            <List items={pizzas} />
-                        </div>
-                        <div className={`${activeTab !== "Postres" && 'hidden'}`}>
-                            <List items={postres} />
-                        </div>
-                        <div className={`${activeTab !== "Bebidas" && 'hidden'}`}>
-                            <List items={bebidas} />
-                        </div>
-                        
-                    </div>
-                </div>
-
-
-
+        <div className="">
+          <div className="">
+            <div className={`${activeTab !== "Pizzas" && "hidden"}`}>
+              <List items={pizzas} />
             </div>
-        </section>
+            <div className={`${activeTab !== "Postres" && "hidden"}`}>
+              <List items={postres} />
+            </div>
+            <div className={`${activeTab !== "Bebidas" && "hidden"}`}>
+              <List items={bebidas} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-    )
-}
-
-export default Carta
+export default Carta;

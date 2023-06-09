@@ -1,47 +1,42 @@
 const MasInformacion = () => {
   return (
-    <section id="servicios" className="py-6">
-      <div className="flex flex-col md:flex-row">
-        <div className="md:w-4/6 px-4 py-6 ">
-          <div className="pb-4 pl-4 md:pl-12">
-            <h1 className="font-bold text-xl md:text-3xl">HORARIOS</h1>
-            <p className="text-gray-500 font-light text-md">ORDUTEGIA</p>
-          </div>
-          <div className="">
-            <div className="">
-              <p className="text-xs">
-                <span className="font-semibold">L:</span> Cerrado
-              </p>
-              <p className="text-xs">
-                <span className="font-semibold">M:</span> Cerrado
-              </p>
-              <p className="text-xs">
-                <span className="font-semibold">X:</span> 19:00 - 22:30h
-              </p>
-              <p className="text-xs">
-                <span className="font-semibold">J:</span> 19:00 - 22:00h
-              </p>
-              <p className="text-xs">
-                <span className="font-semibold">V:</span> 19:00 - 23:00h
-              </p>
-              <p className="text-xs">
-                <span className="font-semibold">S:</span> 19:00 - 23:00h
-              </p>
-              <p className="text-xs">
-                <span className="font-semibold">D:</span> 19:00 - 22:00h
-              </p>
-            </div>
-          </div>
+    <section id="servicios" className="pt-6 md:py-6">
+      <div className="flex flex-col md:flex-row justify-around items-center gap-6 md:gap-12">
+        <div className="flex flex-col w-full xl:w-3/6 px-4">
+          <p className="text-lg md:text-xl text-right text-red-600 border-b-gray-200 border-b">
+            <span className="font-semibold text-xl text-black md:text-2xl mr-4 float-left">
+              Lunes y Martes
+            </span>
+            Cerrado
+          </p>
+          <p className="text-lg md:text-xl text-right border-b-gray-200 border-b">
+            <span className="font-semibold text-xl md:text-2xl float-left mr-4">
+              Miercoles y Jueves
+            </span>
+            19:00h - 22:30h
+          </p>
+          <p className="text-lg md:text-xl text-right border-b-gray-200 border-b">
+            <span className="font-semibold text-xl md:text-2xl float-left  mr-4">
+              Viernes y Sábado
+            </span>
+            19:00h - 23:00h
+          </p>
+          <p className="text-lg md:text-xl text-right border-b-gray-200 border-b">
+            <span className="font-semibold text-xl md:text-2xl float-left  mr-4">
+              Domingo
+            </span>{" "}
+            19:00h - 22:00h
+          </p>
         </div>
 
-        <div className="md:w-2/6 flex flex-wrap justify-around gap-6">
-          <div className="flex flex-col items-center justify-center ">
+        <div className="flex flex-row justify-around gap-6 items-top">
+          <div className="flex flex-col items-center justify-start w-44">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               data-name="Layer 1"
               viewBox="0 0 512 512"
               id="credit-card"
-              className="w-16 h-16"
+              className="w-16 h-16 aspect-square"
             >
               <rect
                 width="465"
@@ -124,22 +119,24 @@ const MasInformacion = () => {
                 d="M120.85 320h-65a7.5 7.5 0 0 1 0-15h65a7.5 7.5 0 1 1 0 15zM222.06 320h-65a7.5 7.5 0 0 1 0-15h65a7.5 7.5 0 0 1 0 15zM323.28 320h-65a7.5 7.5 0 0 1 0-15h65a7.5 7.5 0 0 1 0 15zM424.5 320h-65a7.5 7.5 0 0 1 0-15h65a7.5 7.5 0 0 1 0 15z"
               ></path>
             </svg>
-            <p className="text-center font-light">Pagos con tarjeta</p>
+            <p className="text-center font-light">
+              Se aceptan pagos con tarjeta y en metálico
+            </p>
           </div>
-          <div className="relative flex flex-col items-center justify-center ">
+          {/* <div className="relative flex flex-col items-center justify-center ">
             <img
               className="w-16 h-16"
               src="/images/servicios/delivery-icon.svg"
             ></img>
             <p className="text-center font-light">No repartimos a domicilio</p>
-          </div>
-          <div className="flex flex-col items-center justify-center ">
+          </div> */}
+          <div className="flex flex-col items-center justify-start ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               data-name="Layer 1"
               viewBox="0 0 512 512"
               id="pizza"
-              className="h-16 w-16"
+              className="h-16 w-16 aspect-square"
             >
               <path
                 fill="#fbfbfb"
