@@ -34,7 +34,7 @@ const Header = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setBounceCount((count) => count + 1);
-    }, 500); // Cambia el valor 500 a la duración deseada entre rebotes
+    }, 100); // Cambia el valor 500 a la duración deseada entre rebotes
 
     return () => {
       clearInterval(interval);
@@ -42,15 +42,15 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    if (bounceCount >= 4) {
+    if (bounceCount >= 2) {
       setTimeout(() => {
         setBounceCount(0);
-      }, 2000); // Cambia el valor 2000 a la duración deseada de pausa después de los 4 rebotes
+      }, 4000); // Cambia el valor 2000 a la duración deseada de pausa después de los 4 rebotes
     }
   }, [bounceCount]);
 
   const getTransformY = () => {
-    if (bounceCount < 4) {
+    if (bounceCount < 2) {
       // Calcular la posición de rebote basada en el número de rebotes completados
       const offset = 25;
       return `${offset}%`;
