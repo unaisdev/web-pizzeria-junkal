@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 interface TabsProps {
   categories: string[];
@@ -44,7 +44,7 @@ const Tab: React.FC<TabProps> = ({ title, isActive, onClick }) => {
         whileTap={{ scale: 0.8 }}
         className={`${
           isActive ? "font-bold" : ""
-        } uppercase h-full py-4 select-none text-black`}
+        } uppercase h-full py-4 text-sm md:text-base select-none text-black`}
       >
         {title}
       </motion.p>

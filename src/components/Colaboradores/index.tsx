@@ -42,7 +42,7 @@ const Colaboradores = () => {
     <section id="colaboradores" className="pt-6 md:py-6">
       <div className="pb-4 pl-4 md:pl-12">
         <h1 className="font-bold text-xl md:text-3xl">CONOCE EL PRODUCTO</h1>
-        <p className="text-gray-500 font-light text-md">PRODUCTUA EZAGUTU</p>
+        <p className="text-gray-500 font-light text-md">PRODUKTUA EZAGUTU</p>
       </div>
       <div
         className={`grid grid-cols-2 md:grid-cols-4 bg-gray-100 px-2 py-4 md:px-6 md:py-10 gap-y-2 gap-x-2`}
