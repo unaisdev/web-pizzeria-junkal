@@ -55,10 +55,10 @@ const SwiperCarousel = () => {
                     </video>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className='w-full h-full object-cover' alt='Pizza margarita de Pizzeria Junkal' src='/images/swiper/swiper1.webp' />
+                    <img className='w-full h-full object-cover' alt='Pizza margarita de Pizzeria Junkal' src='/images/swiper/swiper1.jpg' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className='w-full h-full object-cover' alt='Pizza margarita de Pizzeria Junkal' src='/images/swiper/swiper2.webp' />
+                    <img className='w-full h-full object-cover' alt='Pizza margarita de Pizzeria Junkal' src='/images/swiper/swiper2.jpg' />
                 </SwiperSlide>
             </Swiper >
         </>
