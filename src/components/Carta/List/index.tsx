@@ -3,8 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 
 export type Item = {
   name: string;
-  desc: string;
-  desc_eus: string;
+  desc?: string;
+  desc_eus?: string;
   image_path: string;
   price: string;
   recommended?: boolean;
