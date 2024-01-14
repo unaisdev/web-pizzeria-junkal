@@ -317,7 +317,7 @@ const Header = () => {
       <div
         className={`${
           scrolled ? "translate-x-0" : "translate-x-28"
-        }  transition transform duration-300 fixed bottom-12 right-8 z-50`}
+        }  transition transform duration-300 fixed bottom-16 md:bottom-20 right-8 z-50`}
       >
         <a
           href="tel:943265863"

@@ -7,7 +7,7 @@ const DondeEstamos = () => {
       <div className="block">
         <div className="pb-4 pl-4  md:pl-12">
           <h1 className="font-bold text-xl md:text-3xl">DÓNDE ESTAMOS</h1>
-          <p className="text-gray-500 font-light text-md">NUN GAUDE</p>
+          <p className="text-gray-500 font-light text-md">NON GAUDE</p>
         </div>
         <div className="w-full flex-wrap items-center bg-slate-200">
           <div className="grow-0 shrink-0 basis-auto block w-full ">

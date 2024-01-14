@@ -42,6 +42,21 @@ const List = ({ items }: Props) => {
     setSelectedItem(index);
   };
 
+  if (items.length === 0) {
+    return (
+      <div className="grid p-12 text-center gap-y-4">
+        <h2 className="text-xl md:text-2xl">
+          Pregúntanos a la hora de hacer tu pedido.
+        </h2>
+        <h3 className="text-sm">
+          {" "}
+          ¡Estaremos encantados de decirte qué postres tenemos hoy para
+          ofrecerte!
+        </h3>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col items-center justify-center">
       <div
@@ -51,7 +66,7 @@ const List = ({ items }: Props) => {
         {items.map((item, index) => (
           <motion.div
             key={index}
-            className={`relative item-carta flex h-auto my-2 mx-4 items-center justify-around bg-gray-100 shadow-md shadow-gray-300`}
+            className={`relative item-carta flex flex-grow h-auto my-2 mx-4 items-center justify-around bg-gray-100 shadow-md shadow-gray-300`}
             initial={{ opacity: 0, scale: 0.6 }}
             animate={controls}
             transition={{ duration: 0.5, delay: index * 0.3 }}

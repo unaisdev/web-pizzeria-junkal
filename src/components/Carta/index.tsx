@@ -18,7 +18,7 @@ const pizzas: Item[] = [
     desc: "Tomate, mozzarella, jamón cocido, emmental y orégano.",
     desc_eus: "Tomate, mozzarella, york, emmental eta oreganoa.",
     image_path: "/images/carta/pizza_jamon_y_queso.jpg",
-    price: "10,00 €",
+    price: "11,50 €",
     recommended: true,
   },
   {
@@ -27,7 +27,15 @@ const pizzas: Item[] = [
     desc_eus:
       "Mozzarella, esne gaina, hirugiharra, tipula potxatua, parmigiano, piper zuria eta gorringoa.",
     image_path: "/images/carta/pizza_carbonara.jpg",
-    price: "10,00 €",
+    price: "12,50 €",
+  },
+
+  {
+    name: "Itsaso",
+    desc: "Tomate, mozzarella, atún, pimiento rojo y cebolla pochada.",
+    desc_eus: "Tomate, mozzarella, atuna, piper gorria eta tipula potxatua.",
+    image_path: "/images/carta/pizza_itsaso.jpg",
+    price: "13,00 €",
   },
   {
     name: "Barbakoa",
@@ -35,28 +43,21 @@ const pizzas: Item[] = [
     desc_eus:
       "Tomate, mozzarella, txahala, hirugiharra, tipula eta barbakoa saltsa.",
     image_path: "/images/carta/pizza_barbacoa.jpg",
-    price: "10,00 €",
-  },
-  {
-    name: "Itsaso",
-    desc: "Tomate, mozzarella, atún, pimiento rojo y cebolla pochada.",
-    desc_eus: "Tomate, mozzarella, atuna, piper gorria eta tipula potxatua.",
-    image_path: "/images/carta/pizza_itsaso.jpg",
-    price: "10,00 €",
+    price: "13,00 €",
   },
   {
     name: "Cuatro Quesos",
     desc: "Mozzarella, gorgonzola, ricota y parmesano (tomate opcional).",
     desc_eus: "Mozzarella, gorgonzola, ricota y parmigiano (tomate aukerakoa).",
     image_path: "/images/carta/pizza_cuatro_quesos.jpg",
-    price: "10,00 €",
+    price: "13,00 €",
   },
   {
     name: "Pollo Ali Oli",
     desc: "Mozzarella, pollo, nata, champiñon, cebolla pochada y salsa ali oli.",
     desc_eus: "Mozzarella, gorgonzola, ricota y parmigiano (tomate aukerakoa).",
     image_path: "/images/carta/pizza_pollo_alioli.jpg",
-    price: "10,00 €",
+    price: "13,00 €",
   },
   {
     name: "Baserri",
@@ -64,14 +65,14 @@ const pizzas: Item[] = [
     desc_eus:
       "Masailak saltsa, mozzarella, txerri masailak, piper gorria eta patata purea.",
     image_path: "/images/carta/pizza_baserri.jpg",
-    price: "10,00 €",
+    price: "14,00 €",
   },
   {
     name: "Riojana",
     desc: "Tomate, mozzarella, chorizo riojano, patata y parmesano.",
     desc_eus: "Tomate, mozzarella, txorizoa, patata eta parmigiano.",
     image_path: "/images/carta/pizza_riojana.jpg",
-    price: "10,00 €",
+    price: "13,00 €",
   },
   {
     name: "Ahuntza",
@@ -79,14 +80,14 @@ const pizzas: Item[] = [
     desc_eus:
       "Mozzarella, ahuntz gazta, hirugiharra, intxaurrak eta irasagarra.",
     image_path: "/images/carta/pizza_ahuntza.jpg",
-    price: "10,00 €",
+    price: "13,00 €",
   },
   {
     name: "Junkal",
     desc: "Mozzarella, crema de langostinos, cebolla, puerros y langostinos.",
     desc_eus: "Mozzarella, ganba krema, tipula, porruak eta ganbak.",
     image_path: "/images/carta/pizza_junkal.jpg",
-    price: "10,00 €",
+    price: "15,00 €",
   },
   {
     name: "Vegana",
@@ -94,101 +95,101 @@ const pizzas: Item[] = [
     desc_eus:
       "Ilarra krema, kalabazin, alkatxofa, tipula potxatua, piper gorria eta oliba olioa.",
     image_path: "/images/carta/pizza_vegana.jpg",
-    price: "10,00 €",
+    price: "14,00 €",
   },
 ];
 
 const postres: Item[] = [
-  {
-    name: "Margarita",
-    desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
-    desc_eus: "Tomate, mozzarella, parmigiano gazta, oliba olioa eta albahaca.",
-    image_path: "/images/carta/pizza_margarita.webp",
-    price: "10,00 €",
-  },
-  {
-    name: "Jamón y Queso",
-    desc: "Tomate, mozzarella, jamón cocido, emmental y orégano.",
-    desc_eus: "Tomate, mozzarella, york, emmental eta oreganoa.",
-    image_path: "/images/carta/pizza_jamon_y_queso.jpg",
-    price: "10,00 €",
-    recommended: true,
-  },
-  {
-    name: "Karbonara",
-    desc: "Mozzarella, nata, bacon, cebolla pochada, parmesano, pimienta blanca y yema de huevo.",
-    desc_eus:
-      "Mozzarella, esne gaina, hirugiharra, tipula potxatua, parmigiano, piper zuria eta gorringoa.",
-    image_path: "/images/carta/pizza_carbonara.jpg",
-    price: "10,00 €",
-  },
-  {
-    name: "Barbakoa",
-    desc: "Tomate, mozzarella, carne de ternera, bacon, cebolla y salsa barbacoa.",
-    desc_eus:
-      "Tomate, mozzarella, txahala, hirugiharra, tipula eta barbakoa saltsa.",
-    image_path: "/images/carta/pizza_barbacoa.jpg",
-    price: "10,00 €",
-  },
-  {
-    name: "Itsaso",
-    desc: "Tomate, mozzarella, atún, pimiento rojo y cebolla pochada.",
-    desc_eus: "Tomate, mozzarella, atuna, piper gorria eta tipula potxatua.",
-    image_path: "/images/carta/pizza_itsaso.jpg",
-    price: "10,00 €",
-  },
-  {
-    name: "Cuatro Quesos",
-    desc: "Mozzarella, gorgonzola, ricota y parmesano (tomate opcional).",
-    desc_eus: "Mozzarella, gorgonzola, ricota y parmigiano (tomate aukerakoa).",
-    image_path: "/images/carta/pizza_cuatro_quesos.jpg",
-    price: "10,00 €",
-  },
-  {
-    name: "Pollo Ali Oli",
-    desc: "Mozzarella, pollo, nata, champiñon, cebolla pochada y salsa ali oli.",
-    desc_eus: "Mozzarella, gorgonzola, ricota y parmigiano (tomate aukerakoa).",
-    image_path: "/images/carta/pizza_pollo_alioli.jpg",
-    price: "10,00 €",
-  },
-  {
-    name: "Baserri",
-    desc: "Salsa de carrilleras, mozzarella, carrillera de cerdo, pimiento rojo y cremoso de patata.",
-    desc_eus:
-      "Masailak saltsa, mozzarella, txerri masailak, piper gorria eta patata purea.",
-    image_path: "/images/carta/pizza_baserri.jpg",
-    price: "10,00 €",
-  },
-  {
-    name: "Riojana",
-    desc: "Tomate, mozzarella, chorizo riojano, patata y parmesano.",
-    desc_eus: "Tomate, mozzarella, txorizoa, patata eta parmigiano.",
-    image_path: "/images/carta/pizza_pollo_alioli.jpg",
-    price: "10,00 €",
-  },
-  {
-    name: "Ahuntza",
-    desc: "Mozzarella, queso de cabra, bacon, nueces y membrillo.",
-    desc_eus:
-      "Mozzarella, ahuntz gazta, hirugiharra, intxaurrak eta irasagarra.",
-    image_path: "/images/carta/pizza_ahuntza.jpg",
-    price: "10,00 €",
-  },
-  {
-    name: "Junkal",
-    desc: "Mozzarella, crema de langostinos, cebolla, puerros y langostinos.",
-    desc_eus: "Mozzarella, ganba krema, tipula, porruak eta ganbak.",
-    image_path: "/images/carta/pizza_junkal.jpg",
-    price: "10,00 €",
-  },
-  {
-    name: "Vegana",
-    desc: "Crema de guisantes, calabacín, alcachofas, cebolla pochada, pimiento rojo y aceite de oliva.",
-    desc_eus:
-      "Ilarra krema, kalabazin, alkatxofa, tipula potxatua, piper gorria eta oliba olioa.",
-    image_path: "/images/carta/pizza_vegana.jpg",
-    price: "10,00 €",
-  },
+  // {
+  //   name: "Margarita",
+  //   desc: "Tomate, mozzarella, parmesano, aceite de oliva y albahaca.",
+  //   desc_eus: "Tomate, mozzarella, parmigiano gazta, oliba olioa eta albahaca.",
+  //   image_path: "/images/carta/pizza_margarita.webp",
+  //   price: "10,00 €",
+  // },
+  // {
+  //   name: "Jamón y Queso",
+  //   desc: "Tomate, mozzarella, jamón cocido, emmental y orégano.",
+  //   desc_eus: "Tomate, mozzarella, york, emmental eta oreganoa.",
+  //   image_path: "/images/carta/pizza_jamon_y_queso.jpg",
+  //   price: "10,00 €",
+  //   recommended: true,
+  // },
+  // {
+  //   name: "Karbonara",
+  //   desc: "Mozzarella, nata, bacon, cebolla pochada, parmesano, pimienta blanca y yema de huevo.",
+  //   desc_eus:
+  //     "Mozzarella, esne gaina, hirugiharra, tipula potxatua, parmigiano, piper zuria eta gorringoa.",
+  //   image_path: "/images/carta/pizza_carbonara.jpg",
+  //   price: "10,00 €",
+  // },
+  // {
+  //   name: "Barbakoa",
+  //   desc: "Tomate, mozzarella, carne de ternera, bacon, cebolla y salsa barbacoa.",
+  //   desc_eus:
+  //     "Tomate, mozzarella, txahala, hirugiharra, tipula eta barbakoa saltsa.",
+  //   image_path: "/images/carta/pizza_barbacoa.jpg",
+  //   price: "10,00 €",
+  // },
+  // {
+  //   name: "Itsaso",
+  //   desc: "Tomate, mozzarella, atún, pimiento rojo y cebolla pochada.",
+  //   desc_eus: "Tomate, mozzarella, atuna, piper gorria eta tipula potxatua.",
+  //   image_path: "/images/carta/pizza_itsaso.jpg",
+  //   price: "10,00 €",
+  // },
+  // {
+  //   name: "Cuatro Quesos",
+  //   desc: "Mozzarella, gorgonzola, ricota y parmesano (tomate opcional).",
+  //   desc_eus: "Mozzarella, gorgonzola, ricota y parmigiano (tomate aukerakoa).",
+  //   image_path: "/images/carta/pizza_cuatro_quesos.jpg",
+  //   price: "10,00 €",
+  // },
+  // {
+  //   name: "Pollo Ali Oli",
+  //   desc: "Mozzarella, pollo, nata, champiñon, cebolla pochada y salsa ali oli.",
+  //   desc_eus: "Mozzarella, gorgonzola, ricota y parmigiano (tomate aukerakoa).",
+  //   image_path: "/images/carta/pizza_pollo_alioli.jpg",
+  //   price: "10,00 €",
+  // },
+  // {
+  //   name: "Baserri",
+  //   desc: "Salsa de carrilleras, mozzarella, carrillera de cerdo, pimiento rojo y cremoso de patata.",
+  //   desc_eus:
+  //     "Masailak saltsa, mozzarella, txerri masailak, piper gorria eta patata purea.",
+  //   image_path: "/images/carta/pizza_baserri.jpg",
+  //   price: "10,00 €",
+  // },
+  // {
+  //   name: "Riojana",
+  //   desc: "Tomate, mozzarella, chorizo riojano, patata y parmesano.",
+  //   desc_eus: "Tomate, mozzarella, txorizoa, patata eta parmigiano.",
+  //   image_path: "/images/carta/pizza_pollo_alioli.jpg",
+  //   price: "10,00 €",
+  // },
+  // {
+  //   name: "Ahuntza",
+  //   desc: "Mozzarella, queso de cabra, bacon, nueces y membrillo.",
+  //   desc_eus:
+  //     "Mozzarella, ahuntz gazta, hirugiharra, intxaurrak eta irasagarra.",
+  //   image_path: "/images/carta/pizza_ahuntza.jpg",
+  //   price: "10,00 €",
+  // },
+  // {
+  //   name: "Junkal",
+  //   desc: "Mozzarella, crema de langostinos, cebolla, puerros y langostinos.",
+  //   desc_eus: "Mozzarella, ganba krema, tipula, porruak eta ganbak.",
+  //   image_path: "/images/carta/pizza_junkal.jpg",
+  //   price: "10,00 €",
+  // },
+  // {
+  //   name: "Vegana",
+  //   desc: "Crema de guisantes, calabacín, alcachofas, cebolla pochada, pimiento rojo y aceite de oliva.",
+  //   desc_eus:
+  //     "Ilarra krema, kalabazin, alkatxofa, tipula potxatua, piper gorria eta oliba olioa.",
+  //   image_path: "/images/carta/pizza_vegana.jpg",
+  //   price: "10,00 €",
+  // },
 ];
 
 const bebidas: Item[] = [
@@ -256,7 +257,7 @@ const Carta = () => {
         <div className="bg-gray-100">
           <div className="py-6 pl-4  md:pl-12">
             <h1 className="font-bold text-xl md:text-3xl">NUESTRA CARTA</h1>
-            <h2 className="text-gray-500 font-light text-md">GEURE MENUA</h2>
+            <h2 className="text-gray-500 font-light text-md">GURE MENUA</h2>
           </div>
           {/* <div className="">
                         <ul className="flex flex-wrap justify-around text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
