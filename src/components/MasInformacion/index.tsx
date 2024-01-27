@@ -11,21 +11,15 @@ const MasInformacion = () => {
           </p>
           <p className="text-md md:text-xl text-right border-b-gray-200 border-b">
             <span className="font-semibold text-lg md:text-2xl float-left mr-4">
-              Miércoles y Jueves
+              Miércoles, Jueves y Domingo
             </span>
-            19:00h - 22:30h
+            19:30h - 22:00h
           </p>
           <p className="text-md md:text-xl text-right border-b-gray-200 border-b">
             <span className="font-semibold text-lg md:text-2xl float-left  mr-4">
               Viernes y Sábado
             </span>
-            19:00h - 23:00h
-          </p>
-          <p className="text-md md:text-xl text-right border-b-gray-200 border-b">
-            <span className="font-semibold text-lg md:text-2xl float-left  mr-4">
-              Domingo
-            </span>{" "}
-            19:00h - 22:00h
+            19:30h - 23:00h
           </p>
         </div>
 

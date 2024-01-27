@@ -64,7 +64,7 @@ const SwiperCarousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover "
             alt="Pizza margarita de Pizzeria Junkal"
             src="/images/swiper/swiper1.jpg"
           />
