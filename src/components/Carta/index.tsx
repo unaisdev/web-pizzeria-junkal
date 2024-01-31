@@ -29,6 +29,7 @@ const pizzas: Item[] = [
       "Mozzarella di Latte, esne gaina, hirugiharra, tipula potxatua, parmigiano, piper zuria eta gorringoa.",
     image_path: "/images/carta/pizza_carbonara.jpeg",
     price: "12,50 €",
+    recommended: true,
   },
 
   {
@@ -85,6 +86,7 @@ const pizzas: Item[] = [
       "Mozzarella di Latte, ahuntz gazta, hirugiharra, intxaurrak eta irasagarra.",
     image_path: "/images/carta/pizza_ahuntza.jpeg",
     price: "13,00 €",
+    recommended: true,
   },
   {
     name: "Junkal",
@@ -100,6 +102,7 @@ const pizzas: Item[] = [
       "Ilarra krema, kalabazin, alkatxofa, tipula potxatua, piper gorria eta oliba olioa.",
     image_path: "/images/carta/pizza_vegana.jpeg",
     price: "14,00 €",
+    recommended: true,
   },
   {
     name: "Bolonia",
@@ -107,6 +110,7 @@ const pizzas: Item[] = [
     desc_eus: "Mozzarella di Latte, bologna mortadela, ricotta eta tapenade.",
     image_path: "/images/carta/pizza_bolonia.jpeg",
     price: "14,00 €",
+    recommended: true,
   },
   {
     name: "Gorgonpera",
@@ -122,6 +126,8 @@ const postres: Item[] = [
   {
     name: "Helados artesanales",
     desc: "Avellana, dulce de leche, pistacho, chocolate, café y mango.",
+    desc_eus:
+      "Hururra, dulce de leche, pistatxoa, txokolatea, kafea eta mangoa.",
     image_path: "/images/carta/postres/helados.jpeg",
     price: "2,90 €",
   },
