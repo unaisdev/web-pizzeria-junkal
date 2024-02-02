@@ -13,6 +13,7 @@ const pizzas: Item[] = [
       "Tomate, mozzarella di latte, parmigiano gazta, oliba olioa eta albahaca.",
     image_path: "/images/carta/pizza_margarita.jpeg",
     price: "10,00 €",
+    recommended: true,
   },
   {
     name: "Jamón y Queso",
@@ -20,7 +21,6 @@ const pizzas: Item[] = [
     desc_eus: "Tomate, mozzarella di latte, york, emmental eta oreganoa.",
     image_path: "/images/carta/pizza_jamon_y_queso.jpeg",
     price: "11,50 €",
-    recommended: true,
   },
   {
     name: "Karbonara",
@@ -47,6 +47,7 @@ const pizzas: Item[] = [
       "Tomate, mozzarella di latte, txahala, hirugiharra, tipula eta barbakoa saltsa.",
     image_path: "/images/carta/pizza_barbacoa.jpeg",
     price: "13,00 €",
+    recommended: true,
   },
   {
     name: "Cuatro Quesos",
@@ -55,6 +56,16 @@ const pizzas: Item[] = [
       "Mozzarella di Latte, gorgonzola, ricota y parmigiano (tomate aukerakoa).",
     image_path: "/images/carta/pizza_cuatro_quesos.jpeg",
     price: "13,00 €",
+    recommended: true,
+  },
+
+  {
+    name: "Baserri",
+    desc: "Salsa de carrilleras, mozzarella di latte, carrillera de cerdo, pimiento rojo y cremoso de patata.",
+    desc_eus:
+      "Masailak saltsa, mozzarella di latte, txerri masailak, piper gorria eta patata purea.",
+    image_path: "/images/carta/pizza_baserri.jpeg",
+    price: "14,00 €",
   },
   {
     name: "Pollo Ali Oli",
@@ -63,14 +74,7 @@ const pizzas: Item[] = [
       "Mozzarella di Latte, gorgonzola, ricota y parmigiano (tomate aukerakoa).",
     image_path: "/images/carta/pizza_pollo_alioli.jpeg",
     price: "13,00 €",
-  },
-  {
-    name: "Baserri",
-    desc: "Salsa de carrilleras, mozzarella di latte, carrillera de cerdo, pimiento rojo y cremoso de patata.",
-    desc_eus:
-      "Masailak saltsa, mozzarella di latte, txerri masailak, piper gorria eta patata purea.",
-    image_path: "/images/carta/pizza_baserri.jpeg",
-    price: "14,00 €",
+    recommended: true,
   },
   {
     name: "Riojana",
