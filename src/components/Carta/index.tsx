@@ -129,9 +129,9 @@ const pizzas: Item[] = [
 const postres: Item[] = [
   {
     name: "Helados artesanales",
-    desc: "Avellana, dulce de leche, pistacho, chocolate, café y mango.",
+    desc: "Sabores de avellana, dulce de leche, pistacho, chocolate, café y mango.",
     desc_eus:
-      "Hururra, dulce de leche, pistatxoa, txokolatea, kafea eta mangoa.",
+      "Hururra, esne gozoa, pistatxo, txokolate, kafe eta mango zaporeak.",
     image_path: "/images/carta/postres/helados.jpeg",
     price: "2,90 €",
   },
