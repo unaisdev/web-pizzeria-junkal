@@ -140,7 +140,7 @@ const postres: Item[] = [
     desc: "Bizcocho empapado en cafe, mascarpone, Amaretto y cacao.",
     desc_eus: "Kafean bustitako tarta, mascarpone, Amaretto eta kakao.",
     image_path: "/images/carta/postres/tiramisu.jpeg",
-    price: "2,90 €",
+    price: "4,00 €",
   },
 ];
 
