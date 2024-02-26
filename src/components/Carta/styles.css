@@ -1,6 +1,5 @@
 .item-carta {
   width: 450px;
-  
 }
 
 @media only screen and (max-width: 600px) {
@@ -8,11 +7,16 @@
     width: auto;
     aspect-ratio: auto;
   }
-
 }
 
 .carta-item {
   background-color: transparent !important;
-  background-image: linear-gradient(to top, rgba(100, 100, 100, 0), rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.7),  rgba(100, 100, 100, 0.9), rgba(100, 100, 100, 1)) !important;
+  background-image: linear-gradient(
+    to top,
+    rgba(100, 100, 100, 0),
+    rgba(100, 100, 100, 0.5),
+    rgba(100, 100, 100, 0.7),
+    rgba(100, 100, 100, 0.9),
+    rgba(100, 100, 100, 1)
+  ) !important;
 }
-
