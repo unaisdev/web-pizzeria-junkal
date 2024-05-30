@@ -11,9 +11,7 @@ import MasInformacion from "../components/MasInformacion";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Pizzería Junkal - Irun">
-  <Header client:only />
-</Layout>
+<Layout title="Pizzería Junkal - Irun" />
 
 <style>
   :global(html) {
@@ -32,7 +30,3 @@ import Layout from "../layouts/Layout.astro";
     }
   }
 </style>
-
-<script>
-  window.location.href = "http://pizzeriajunkal.com";
-</script>
