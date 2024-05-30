@@ -16,10 +16,10 @@ import Layout from "../layouts/Layout.astro";
 
   <main class="">
     <Presentacion />
-	  <Carta client:only />
-    <SwiperCarousel client:visible/>
+    <Carta client:only />
+    <SwiperCarousel client:visible />
 
-    <Colaboradores client:idle/>
+    <Colaboradores client:idle />
     <DondeEstamos />
     <MasInformacion />
   </main>
@@ -43,3 +43,7 @@ import Layout from "../layouts/Layout.astro";
     }
   }
 </style>
+
+<script>
+  window.location.href = "http://pizzeriajunkal.com";
+</script>
